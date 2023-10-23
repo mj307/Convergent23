@@ -22,42 +22,61 @@ const styles = StyleSheet.create({
   },
 });*/
 
-import * as React from 'react';
-import { View, Text } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import React, { Component } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-function Feed() {
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Feed Screen</Text>
-        </View>
-    );
+class SideMenu extends Component {
+    render() {
+        return (
+            <View style={styles.container}>
+                <View style={styles.menuHeader}>
+                    <Text style={styles.headerText}>Side Menu</Text>
+                </View>
+                <View style={styles.menuItems}>
+                    <TouchableOpacity style={styles.menuItem}>
+                        <Text>Home</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.menuItem}>
+                        <Text>About Us</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.menuItem}>
+                        <Text>Services</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.menuItem}>
+                        <Text>Contact Us</Text>
+                    </TouchableOpacity>
+                </View>
+            </View>
+        );
+    }
 }
 
-function Article() {
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Article Screen</Text>
-        </View>
-    );
-}
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#FFF',
+        borderRightWidth: 1,
+        borderColor: '#DDD',
+    },
+    menuHeader: {
+        height: 100,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderBottomWidth: 1,
+        borderColor: '#DDD',
+    },
+    headerText: {
+        fontSize: 20,
+    },
+    menuItems: {
+        flex: 1,
+        paddingTop: 20,
+    },
+    menuItem: {
+        padding: 15,
+        borderBottomWidth: 1,
+        borderColor: '#DDD',
+    },
+});
 
-const Drawer = createDrawerNavigator();
-
-function MyDrawer() {
-    return (
-        <Drawer.Navigator useLegacyImplementation>
-            <Drawer.Screen name="Feed" component={Feed} />
-            <Drawer.Screen name="Article" component={Article} />
-        </Drawer.Navigator>
-    );
-}
-
-export default function App() {
-    return (
-        <NavigationContainer>
-            <MyDrawer />
-        </NavigationContainer>
-    );
-}
+export default SideMenu;

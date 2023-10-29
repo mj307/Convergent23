@@ -1,11 +1,20 @@
 import {StyleSheet, Text, View} from "react-native";
 import React from 'react'
+import Menu from "./Menu";
 
 const Signup = () => {
     return (
-        <Text style={styles.baseText}>
-            signup
-        </Text>
+        <View style={styles.menuStyle}>
+            <View style={styles.lineStyle}></View>
+            <Menu />
+            <View
+                style={[
+                    styles.lineStyle,
+                    {
+                        marginVertical: 15,
+                    },
+                ]}></View>
+        </View>
     );
 };
 

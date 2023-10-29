@@ -7,6 +7,7 @@ import {
     Image,
 } from "react-native";
 import React from "react";
+import Menu from "./Menu";
 
 const About = () => {
     return (
@@ -71,6 +72,17 @@ const About = () => {
                         }}
                     />
                 </TouchableOpacity>
+            </View>
+            <View style={styles.menuStyle}>
+                <View style={styles.lineStyle}></View>
+                <Menu />
+                <View
+                    style={[
+                        styles.lineStyle,
+                        {
+                            marginVertical: 15,
+                        },
+                    ]}></View>
             </View>
         </View>
     );

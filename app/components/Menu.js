@@ -16,7 +16,7 @@ const Menu = () => {
                 onPress={() => navigation.navigate(Login)}>
                 {/* <Text>Course</Text> */}
                 <Image
-                    style={styles.iconStytle}
+                    style={styles.iconStyle}
                     source={{
                         uri: "https://img.icons8.com/stickers/90/000000/training.png",
                     }}
@@ -27,7 +27,7 @@ const Menu = () => {
                 style={styles.buttonStyle}
                 onPress={() => navigation.navigate(Signup)}>
                 <Image
-                    style={styles.iconStytle}
+                    style={styles.iconStyle}
                     source={{
                         uri: "https://img.icons8.com/stickers/100/000000/conference.png",
                     }}
@@ -38,7 +38,7 @@ const Menu = () => {
                 style={styles.buttonStyle}
                 onPress={() => navigation.navigate(About)}>
                 <Image
-                    style={styles.iconStytle}
+                    style={styles.iconStyle}
                     source={{
                         uri: "https://img.icons8.com/stickers/100/000000/about.png",
                     }}
@@ -49,7 +49,7 @@ const Menu = () => {
                 style={styles.buttonStyle}
                 onPress={() => navigation.navigate(Contact)}>
                 <Image
-                    style={styles.iconStytle}
+                    style={styles.iconStyle}
                     source={{
                         uri: "https://img.icons8.com/stickers/100/000000/phone-office.png",
                     }}
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     textStyle: {
         textTransform: "uppercase",
     },
-    iconStytle: {
+    iconStyle: {
         width: "100%",
         height: 50,
         aspectRatio: 1,

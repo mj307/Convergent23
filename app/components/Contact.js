@@ -8,6 +8,8 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 import Checkbox from "expo-checkbox";
+import Menu from "./Menu";
+
 
 const Contact = ({ navigation }) => {
     const [name, setName] = useState("");
@@ -74,6 +76,7 @@ const Contact = ({ navigation }) => {
                     multiline={true}
                 />
             </View>
+            
 
             {/* checkbox  */}
 
@@ -101,6 +104,19 @@ const Contact = ({ navigation }) => {
                 onPress={submit}>
                 <Text style={styles.buttonText}> Contact Us </Text>
             </TouchableOpacity>
+            <View style={styles.menuStyle}>
+                <View style={styles.lineStyle}></View>
+                <Menu />
+                <View
+                    style={[
+                        styles.lineStyle,
+                        {
+                            marginVertical: 15,
+                        },
+                    ]}></View>
+            </View>
+
+            
         </View>
     );
 };

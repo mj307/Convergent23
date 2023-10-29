@@ -4,7 +4,7 @@ import Menu from "./Menu";
 
 const Home = (props) => {
     const description =
-        "hi";
+        "need to fill in with buttons";
 
     return (
         <View style={styles.mainContainer}>
@@ -15,7 +15,7 @@ const Home = (props) => {
                         source={require("../../assets/logo.jpeg")}
                     />*/}
 
-                {/*<Text style={styles.mainHeader}>Welcome to</Text>
+                <Text style={styles.mainHeader}>Find A</Text>
                 <Text
                     style={[
                         styles.mainHeader,
@@ -25,8 +25,8 @@ const Home = (props) => {
                             marginTop: 0,
                         },
                     ]}>
-                    {props.channelName}
-                </Text>*/}
+                    Study Group
+                </Text>
 
                 <Text style={styles.paraStyle}>{description} </Text>
             </View>
@@ -38,7 +38,7 @@ const Home = (props) => {
                     style={[
                         styles.lineStyle,
                         {
-                            marginVertical: 10,
+                            marginVertical: 15,
                         },
                     ]}></View>
             </View>

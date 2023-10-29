@@ -1,57 +1,114 @@
-import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
+import React from "react";
 
-class SideMenu extends Component {
-    render() {
-        return (
-            <ScrollView style={styles.container}>
-                <View style={styles.menuHeader}>
-                    <Text style={styles.headerText}>Side Menu</Text>
-                </View>
-                <View style={styles.menuItems}>
-                    <TouchableOpacity style={styles.menuItem}>
-                        <Text>Home</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.menuItem}>
-                        <Text>About Us</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.menuItem}>
-                        <Text>Services</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.menuItem}>
-                        <Text>Contact Us</Text>
-                    </TouchableOpacity>
-                </View>
-            </ScrollView>
-        );
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import {
+    useFonts,
+    JosefinSans_400Regular,
+    JosefinSans_500Medium,
+} from "@expo-google-fonts/josefin-sans";
+import { Nunito_600SemiBold, Nunito_700Bold } from "@expo-google-fonts/nunito";
+import AppLoading from "expo-app-loading";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import User from "./components/User";
+
+export default function App() {
+    const Stack = createNativeStackNavigator();
+
+    let [fontsLoaded] = useFonts({
+        JosefinSans_400Regular,
+        JosefinSans_500Medium,
+        Nunito_600SemiBold,
+        Nunito_700Bold,
+    });
+
+    if (!fontsLoaded) {
+        <AppLoading />;
     }
+
+    return (
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName="Home">
+                {/* home screen  */}
+                <Stack.Screen
+                    name="Home"
+                    options={{
+                        headerShown: false,
+                    }}>
+                    {(props) => <Home {...props} channelName={"Thapa Technical"} />}
+                </Stack.Screen>
+
+                {/* Course Screen  */}
+                <Stack.Screen
+                    name="Login"
+                    component={Login}
+                    options={{
+                        headerTitleStyle: {
+                            fontSize: 25,
+                            fontFamily: "Nunito_600SemiBold",
+                        },
+                        headerTitle: "Login",
+                        headerTitleAlign: "center",
+                    }}
+                />
+
+                {/* UserData Screen  */}
+                <Stack.Screen
+                    name="User"
+                    component={User}
+                    options={{
+                        headerTitleStyle: {
+                            fontSize: 25,
+                            fontFamily: "Nunito_600SemiBold",
+                        },
+                        headerTitle: "Students Data",
+                        headerTitleAlign: "center",
+                    }}
+                />
+
+                {/* About Screen  */}
+                <Stack.Screen
+                    name="About"
+                    component={About}
+                    options={{
+                        headerTitleStyle: {
+                            fontSize: 25,
+                            fontFamily: "Nunito_600SemiBold",
+                        },
+                        headerTitleAlign: "center",
+                    }}
+                />
+
+                {/* Contact Screen  */}
+                <Stack.Screen
+                    name="Contact"
+                    component={Contact}
+                    options={{
+                        headerTitleStyle: {
+                            fontSize: 25,
+                            fontFamily: "Nunito_600SemiBold",
+                        },
+                        headerTitleAlign: "center",
+                    }}
+                />
+
+                {/* CourseDetails Screen  */}
+                <Stack.Screen
+                    name="Signup"
+                    component={Signup}
+                    options={{
+                        headerTitleStyle: {
+                            fontSize: 25,
+                            fontFamily: "Nunito_600SemiBold",
+                        },
+                        headerTitleAlign: "center",
+                    }}
+                />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#FFF',
-        marginVertical: 20, // Add margin to move content down
-    },
-    menuHeader: {
-        height: 100,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderBottomWidth: 1,
-        borderColor: '#DDD',
-    },
-    headerText: {
-        fontSize: 20,
-    },
-    menuItems: {
-        flex: 1,
-        paddingTop: 20,
-    },
-    menuItem: {
-        padding: 15,
-        borderBottomWidth: 1,
-        borderColor: '#DDD',
-    },
-});
-
-export default SideMenu;

@@ -42,7 +42,7 @@ export default function App() {
                     {(props) => <Home {...props} channelName={"Thapa Technical"} />}
                 </Stack.Screen>
 
-                {/* Course Screen  */}
+                {/* Login Screen  */}
                 <Stack.Screen
                     name="Login"
                     component={Login}
@@ -51,7 +51,6 @@ export default function App() {
                             fontSize: 25,
                             fontFamily: "Nunito_600SemiBold",
                         },
-                        headerTitle: "Login",
                         headerTitleAlign: "center",
                     }}
                 />

@@ -15,7 +15,7 @@ import AppLoading from "expo-app-loading";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import User from "./components/User";
-
+import { db } from './Firebase.js';
 export default function App() {
     const Stack = createNativeStackNavigator();
 

@@ -2,7 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { TouchableOpacity, View, StyleSheet, Text, Image } from "react-native";
 import Login from "./Login";
-import Signup from "./Signup";
+import Signup from "../backend/auth_signup_password";
 import Contact from "./Contact";
 import User from "./User";
 import About from "./About";

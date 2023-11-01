@@ -6,6 +6,7 @@ const Login = () => {
         <View style={styles.menuStyle}>
             <View style={styles.lineStyle}></View>
             <Menu />
+            <Text style={styles.baseText1}>Hello, this is some text.</Text>
             <View
                 style={[
                     styles.lineStyle,
@@ -24,6 +25,11 @@ const styles = StyleSheet.create({
     innerText: {
         color: 'red',
     },
+    baseText1: {
+        fontWeight: 'bold',
+        fontSize: 18, // You can set the font size
+        color: 'blue', // You can set the text color
+      }
 });
 
 export default Login;

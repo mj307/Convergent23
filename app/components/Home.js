@@ -21,7 +21,7 @@ const Home = (props) => {
                         styles.mainHeader,
                         {
                             fontSize: 33,
-                            color: "#4c5dab",
+                            color: "#000000",
                             marginTop: 0,
                         },
                     ]}>
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         display: "flex",
         justifyContent: "space-between",
         paddingHorizontal: 20,
-        backgroundColor: "#fff",
+        backgroundColor: "#f1eee9",
         textAlign: "center",
     },
 

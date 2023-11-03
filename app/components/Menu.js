@@ -14,7 +14,6 @@ const Menu = () => {
             <TouchableOpacity
                 style={styles.buttonStyle}
                 onPress={() => navigation.navigate(Login)}>
-                {/* <Text>Course</Text> */}
                 <Image
                     style={styles.iconStyle}
                     source={{

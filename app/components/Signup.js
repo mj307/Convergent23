@@ -9,9 +9,8 @@ const Signup = () => {
         <View style={styles.menuStyle}>
             <View style={styles.lineStyle}></View>
             <Menu />
-            <Text style={styles.baseText1}>This is temp</Text>
+            <Text style={styles.baseText1}>Sign up for an account here! Require: first name, last name, learning link??, date of birth</Text>
             <Button style={styles.button}
-  
                 // Some properties given to Button 
                 title="Hello"
                 onPress={() => Alert.alert( 

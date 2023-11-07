@@ -1,35 +1,91 @@
-import {StyleSheet, Text, View} from "react-native";
-import React from 'react'
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import Menu from "./Menu";
+
 const Login = () => {
-    return (
-        <View style={styles.menuStyle}>
-            <View style={styles.lineStyle}></View>
-            <Menu />
-            <Text style={styles.baseText1}>Hello, this is some text.</Text>
-            <View
-                style={[
-                    styles.lineStyle,
-                    {
-                        marginVertical: 15,
-                    },
-                ]}></View>
-        </View>
-    );
+  const [classCode, setClassCode] = useState('');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+
+  const handleLogin = () => {
+    // Add your login logic here
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Welcome to LearnLink</Text>
+
+      <View style={styles.inputContainer}>
+        <TextInput
+          style={styles.input}
+          placeholder="Class Code"
+          value={classCode}
+          onChangeText={text => setClassCode(text)}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Username (utexas.edu email)"
+          value={username}
+          onChangeText={text => setUsername(text)}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Password"
+          secureTextEntry={true}
+          value={password}
+          onChangeText={text => setPassword(text)}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Confirm Password"
+          secureTextEntry={true}
+          value={confirmPassword}
+          onChangeText={text => setConfirmPassword(text)}
+        />
+      </View>
+
+      <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
+        <Text style={styles.loginButtonText}>Sign Up</Text>
+      </TouchableOpacity>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
-    baseText: {
-        fontWeight: 'bold',
-    },
-    innerText: {
-        color: 'red',
-    },
-    baseText1: {
-        fontWeight: 'bold',
-        fontSize: 18, // You can set the font size
-        color: 'blue', // You can set the text color
-      }
+  container: {
+    flex: 1,
+    backgroundColor: '#f5f5dc',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  title: {
+    fontSize: 24,
+    color: 'black',
+    marginBottom: 20,
+  },
+  inputContainer: {
+    width: '80%',
+  },
+  input: {
+    height: 40,
+    borderColor: 'black',
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    marginBottom: 10,
+  },
+  loginButton: {
+    backgroundColor: 'black',
+    padding: 10,
+    borderRadius: 5,
+    marginTop: 20,
+  },
+  loginButtonText: {
+    color: 'white',
+    fontSize: 16,
+    textAlign: 'center',
+  },
 });
 
 export default Login;

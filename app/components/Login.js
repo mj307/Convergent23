@@ -56,13 +56,13 @@ const Login = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5dc',
+    backgroundColor: '#1e1e1e',
     justifyContent: 'center',
     alignItems: 'center',
   },
   title: {
     fontSize: 24,
-    color: 'black',
+    color: 'white',
     marginBottom: 20,
   },
   inputContainer: {
@@ -70,20 +70,21 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    borderColor: 'black',
+    borderColor: 'white',
+    color: 'white',
     borderWidth: 1,
     borderRadius: 5,
     paddingHorizontal: 10,
     marginBottom: 10,
   },
   loginButton: {
-    backgroundColor: 'black',
+    backgroundColor: 'white',
     padding: 10,
     borderRadius: 5,
     marginTop: 20,
   },
   loginButtonText: {
-    color: 'white',
+    color: 'black',
     fontSize: 16,
     textAlign: 'center',
   },

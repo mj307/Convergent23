@@ -76,7 +76,6 @@ const styles = StyleSheet.create({
     },
 
     mainHeader: {
-        padding: '10px',
         fontSize: 30,
         color: "white",
         fontFamily: "Cabin",
@@ -95,7 +94,7 @@ const styles = StyleSheet.create({
     lineStyle: {
         marginBottom: 10,
         borderWidth: 0.5,
-        borderColor: "white",
+        borderColor: "grey",
     },
 });
 

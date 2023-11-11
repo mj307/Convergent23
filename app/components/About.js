@@ -15,7 +15,8 @@ import Menu from "./Menu";
 const About = () => {
     return (
         <View style={styles.aboutContainer}>
-            <Text style={styles.mainHeader}> My Classes </Text>
+            <Text style={styles.mainHeader}> lol </Text>
+            <Text style={styles.paraStyle}> lol </Text>
 
             {/*<View>
                 <Image
@@ -27,15 +28,56 @@ const About = () => {
             </View>*/}
 
             <View style={styles.aboutLayout}>
-                <Text style={[styles.aboutSubHeader]}> GOV 310L </Text>
+                <Text style={styles.aboutSubHeader}> About Us </Text>
+                <Text style={[styles.paraStyle, styles.aboutPara]}>
+                    its converging time
+                </Text>
             </View>
 
-            <View style={styles.aboutLayout2}>
-                <Text style={[styles.aboutSubHeader]}> ARH 302 </Text>
-            </View>
+            <Text style={styles.mainHeader}> Follow us </Text>
 
+            <View style={styles.menuContainer}>
+                <TouchableOpacity
+                    style={styles.buttonStyle}
+                    onPress={() =>
+                        Linking.openURL("")
+                    }>
+                    <Image
+                        style={styles.iconStyle}
+                        source={{
+                            uri: "https://cdn-icons-png.flaticon.com/512/2111/2111463.png",
+                        }}
+                    />
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    style={styles.buttonStyle}
+                    onPress={() =>
+                        Linking.openURL(
+                            ""
+                        )
+                    }>
+                    <Image
+                        style={styles.iconStyle}
+                        source={{
+                            uri: "https://cdn-icons-png.flaticon.com/512/187/187210.png",
+                        }}
+                    />
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    style={styles.buttonStyle}
+                    onPress={() => Linking.openURL("")}>
+                    <Image
+                        style={styles.iconStyle}
+                        source={{
+                            uri: "https://cdn-icons-png.flaticon.com/512/906/906361.png",
+                        }}
+                    />
+                </TouchableOpacity>
+            </View>
             <View style={styles.menuStyle}>
-                <View style={styles.menuContainer}></View>
+                <View style={styles.lineStyle}></View>
                 <Menu />
                 <View
                     style={[
@@ -53,7 +95,6 @@ const styles = StyleSheet.create({
     aboutContainer: {
         display: "flex",
         alignItems: "center",
-        backgroundColor: '#1e1e1e'
     },
 
     imgStyle: {
@@ -62,37 +103,31 @@ const styles = StyleSheet.create({
         borderRadius: 100,
     },
     mainHeader: {
-        fontSize: 50,
-        color: "#ffffff",
-        fontWeight: "550",
+        fontSize: 18,
+        color: "#344055",
+        textTransform: "uppercase",
+        fontWeight: "500",
         marginTop: 50,
         marginBottom: 10,
-        fontFamily: "Cabin",
+        fontFamily: "JosefinSans_700Bold",
     },
     paraStyle: {
-        fontSize: 20,
-        color: "#ffffff",
+        fontSize: 18,
+        color: "#7d7d7d",
         paddingBottom: 30,
     },
     aboutLayout: {
-        backgroundColor: "#0059AB",
+        backgroundColor: "#4c5dab",
         paddingHorizontal: 30,
         marginVertical: 30,
-        borderRadius: 20,
-    },
-    aboutLayout2: {
-        backgroundColor: "#ffc300",
-        paddingHorizontal: 30,
-        marginVertical: 30,
-        borderRadius: 20,
     },
     aboutSubHeader: {
-        fontSize: 40,
+        fontSize: 18,
         color: "#fff",
         textTransform: "uppercase",
         fontWeight: "500",
         marginVertical: 15,
-        fontFamily: "Cabin",
+        fontFamily: "JosefinSans_700Bold",
         alignSelf: "center",
     },
     aboutPara: {

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import Menu from "./Menu";
 
-
 const Login = () => {
   const [classCode, setClassCode] = useState('');
   const [username, setUsername] = useState('');
@@ -56,13 +55,13 @@ const Login = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1e1e1e',
+    backgroundColor: '#f5f5dc',
     justifyContent: 'center',
     alignItems: 'center',
   },
   title: {
     fontSize: 24,
-    color: 'white',
+    color: 'black',
     marginBottom: 20,
   },
   inputContainer: {
@@ -70,21 +69,20 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    borderColor: 'white',
-    color: 'white',
+    borderColor: 'black',
     borderWidth: 1,
     borderRadius: 5,
     paddingHorizontal: 10,
     marginBottom: 10,
   },
   loginButton: {
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     padding: 10,
     borderRadius: 5,
     marginTop: 20,
   },
   loginButtonText: {
-    color: 'black',
+    color: 'white',
     fontSize: 16,
     textAlign: 'center',
   },

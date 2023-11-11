@@ -17,7 +17,7 @@ const Menu = () => {
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/ios/200/FFFFFF/find-user-male.png",
+                        uri: "https://img.icons8.com/ios-glyphs/240/FFFFFF/search-client.png",
                     }}
                 />
             </TouchableOpacity>
@@ -28,7 +28,7 @@ const Menu = () => {
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/ios-glyphs/200/FFFFFF/smiling.png",
+                        uri: "https://img.icons8.com/ios-glyphs/240/FFFFFF/smiling.png",
                     }}
                 />
             </TouchableOpacity>
@@ -39,7 +39,7 @@ const Menu = () => {
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/ios/120/FFFFFF/class.png",
+                        uri: "https://img.icons8.com/ios-glyphs/240/FFFFFF/preschool.png",
                     }}
                 />
             </TouchableOpacity>
@@ -50,7 +50,7 @@ const Menu = () => {
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/ios/150/FFFFFF/book-reading.png",
+                        uri: "https://img.icons8.com/ios-glyphs/240/FFFFFF/book-reading.png",
                     }}
                 />
             </TouchableOpacity>

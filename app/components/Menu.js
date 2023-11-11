@@ -2,7 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { TouchableOpacity, View, StyleSheet, Text, Image } from "react-native";
 import Login from "./Login";
-import Signup from "./Signup";
+//import Signup from "./Signup";
 import Contact from "./Contact";
 import User from "./User";
 import About from "./About";
@@ -22,16 +22,7 @@ const Menu = () => {
                 />
             </TouchableOpacity>
 
-            <TouchableOpacity
-                style={styles.buttonStyle}
-                onPress={() => navigation.navigate(Signup)}>
-                <Image
-                    style={styles.iconStyle}
-                    source={{
-                        uri: "https://img.icons8.com/ios-glyphs/240/FFFFFF/smiling.png",
-                    }}
-                />
-            </TouchableOpacity>
+           
 
             <TouchableOpacity
                 style={styles.buttonStyle}

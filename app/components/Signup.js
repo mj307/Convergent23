@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import {  createUserWithEmailAndPassword  } from 'firebase/auth';
-import { auth } from '../firebase';
-import { getAnalytics } from "firebase/analytics";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+//import {  createUserWithEmailAndPassword  } from 'firebase/auth';
+//import { auth } from '../firebase';
+//import { getAnalytics } from "firebase/analytics";
+//import { getAuth } from "firebase/auth";
+//import { getFirestore } from "firebase/firestore";
 import {StyleSheet, Text, View} from "react-native";
 import Menu from "./Menu";
  

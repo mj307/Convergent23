@@ -17,7 +17,7 @@ const Menu = () => {
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/stickers/90/000000/training.png",
+                        uri: "https://img.icons8.com/ios/200/FFFFFF/find-user-male.png",
                     }}
                 />
             </TouchableOpacity>
@@ -28,7 +28,7 @@ const Menu = () => {
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/stickers/100/000000/conference.png",
+                        uri: "https://img.icons8.com/ios-glyphs/200/FFFFFF/smiling.png",
                     }}
                 />
             </TouchableOpacity>
@@ -39,7 +39,7 @@ const Menu = () => {
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/stickers/100/000000/about.png",
+                        uri: "https://img.icons8.com/ios/120/FFFFFF/class.png",
                     }}
                 />
             </TouchableOpacity>
@@ -50,7 +50,7 @@ const Menu = () => {
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/stickers/100/000000/phone-office.png",
+                        uri: "https://img.icons8.com/ios/150/FFFFFF/book-reading.png",
                     }}
                 />
             </TouchableOpacity>
@@ -62,6 +62,8 @@ const styles = StyleSheet.create({
     menuContainer: {
         flexDirection: "row",
         justifyContent: "space-evenly",
+        backgroundColor: '#1e1e1e',
+        padding: '10px'
     },
     textStyle: {
         textTransform: "uppercase",

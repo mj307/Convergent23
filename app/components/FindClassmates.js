@@ -1,21 +1,12 @@
-import {
-    Linking,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-    Image,
-} from "react-native";
+import {StyleSheet, Text, TouchableOpacity, View, Image,} from "react-native";
 import React from "react";
 import Menu from "./Menu";
-import {
-    Cabin
-} from  "@fontsource/cabin";
 
-const About = () => {
+const findClassmates = () => {
     return (
-        <View style={styles.aboutContainer}>
-            <Text style={styles.mainHeader}> My Classes </Text>
+        <View style={styles.findClassmatesContainer}>
+            <Text style={styles.mainHeader}> Find Classmates </Text>
+            <Text style={styles.paraStyle}> People to study and form groups with </Text>
 
             {/*<View>
                 <Image
@@ -26,16 +17,16 @@ const About = () => {
                 />
             </View>*/}
 
-            <View style={styles.aboutLayout}>
-                <Text style={[styles.aboutSubHeader]}> GOV 310L </Text>
+            <View style={styles.findClassmatesLayout}>
+                <Text style={styles.findClassmatesSubHeader}> Find Classmates! </Text>
+                <Text style={[styles.paraStyle, styles.findClassmatesPara]}>
+                    add classes here
+                </Text>
             </View>
 
-            <View style={styles.aboutLayout2}>
-                <Text style={[styles.aboutSubHeader]}> ARH 302 </Text>
-            </View>
 
             <View style={styles.menuStyle}>
-                <View style={styles.menuContainer}></View>
+                <View style={styles.lineStyle}></View>
                 <Menu />
                 <View
                     style={[
@@ -50,10 +41,9 @@ const About = () => {
 };
 
 const styles = StyleSheet.create({
-    aboutContainer: {
+    findClassmatesContainer: {
         display: "flex",
         alignItems: "center",
-        backgroundColor: '#1e1e1e'
     },
 
     imgStyle: {
@@ -62,40 +52,34 @@ const styles = StyleSheet.create({
         borderRadius: 100,
     },
     mainHeader: {
-        fontSize: 50,
-        color: "#ffffff",
-        fontWeight: "550",
+        fontSize: 18,
+        color: "#344055",
+        textTransform: "uppercase",
+        fontWeight: "500",
         marginTop: 50,
         marginBottom: 10,
         fontFamily: "Cabin",
     },
     paraStyle: {
-        fontSize: 20,
-        color: "#ffffff",
+        fontSize: 18,
+        color: "#7d7d7d",
         paddingBottom: 30,
     },
-    aboutLayout: {
-        backgroundColor: "#0059AB",
+    findClassmatesLayout: {
+        backgroundColor: "#4c5dab",
         paddingHorizontal: 30,
         marginVertical: 30,
-        borderRadius: 20,
     },
-    aboutLayout2: {
-        backgroundColor: "#ffc300",
-        paddingHorizontal: 30,
-        marginVertical: 30,
-        borderRadius: 20,
-    },
-    aboutSubHeader: {
-        fontSize: 40,
+    findClassmatesSubHeader: {
+        fontSize: 18,
         color: "#fff",
         textTransform: "uppercase",
         fontWeight: "500",
         marginVertical: 15,
-        fontFamily: "Cabin",
+        fontFamily: "cabin500",
         alignSelf: "center",
     },
-    aboutPara: {
+    findClassmatesPara: {
         color: "#fff",
     },
     menuContainer: {
@@ -111,4 +95,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default About;
+export default findClassmates;

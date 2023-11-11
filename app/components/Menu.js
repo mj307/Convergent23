@@ -4,6 +4,7 @@ import { TouchableOpacity, View, StyleSheet, Text, Image } from "react-native";
 import Login from "./Login";
 import Signup from "./Signup";
 import Contact from "./Contact";
+import FindClassmates from "./FindClassmates";
 import User from "./User";
 import About from "./About";
 
@@ -24,7 +25,7 @@ const Menu = () => {
 
             <TouchableOpacity
                 style={styles.buttonStyle}
-                onPress={() => navigation.navigate(Signup)}>
+                onPress={() => navigation.navigate(FindClassmates)}>
                 <Image
                     style={styles.iconStyle}
                     source={{

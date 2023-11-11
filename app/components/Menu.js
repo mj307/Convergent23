@@ -17,12 +17,25 @@ const Menu = () => {
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/ios-glyphs/240/FFFFFF/search-client.png",
+                        uri: "https://img.icons8.com/stickers/90/000000/training.png",
                     }}
                 />
             </TouchableOpacity>
 
+<<<<<<< HEAD
            
+=======
+            <TouchableOpacity
+                style={styles.buttonStyle}
+                onPress={() => navigation.navigate(Signup)}>
+                <Image
+                    style={styles.iconStyle}
+                    source={{
+                        uri: "https://img.icons8.com/stickers/100/000000/conference.png",
+                    }}
+                />
+            </TouchableOpacity>
+>>>>>>> ad2deccf440ebf5586743bcac5e89324811981e7
 
             <TouchableOpacity
                 style={styles.buttonStyle}
@@ -30,7 +43,7 @@ const Menu = () => {
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/ios-glyphs/240/FFFFFF/preschool.png",
+                        uri: "https://img.icons8.com/stickers/100/000000/about.png",
                     }}
                 />
             </TouchableOpacity>
@@ -41,7 +54,7 @@ const Menu = () => {
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/ios-glyphs/240/FFFFFF/book-reading.png",
+                        uri: "https://img.icons8.com/stickers/100/000000/phone-office.png",
                     }}
                 />
             </TouchableOpacity>
@@ -53,8 +66,6 @@ const styles = StyleSheet.create({
     menuContainer: {
         flexDirection: "row",
         justifyContent: "space-evenly",
-        backgroundColor: '#1e1e1e',
-        padding: '10px'
     },
     textStyle: {
         textTransform: "uppercase",

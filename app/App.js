@@ -10,7 +10,7 @@ import {
     JosefinSans_400Regular,
     JosefinSans_500Medium,
 } from "@expo-google-fonts/josefin-sans";
-import Cabin from "@fontsource/cabin"; // Defaults to weight 400
+// import Cabin from "@fontsource/cabin"; // Defaults to weight 400
 // import {
 //     useFonts,
 //     Cabin_400Regular,

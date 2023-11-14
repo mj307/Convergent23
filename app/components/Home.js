@@ -14,8 +14,8 @@ const Home = (props) => {
                         resizeMode="contain"
                         source={require("../../assets/logo.jpeg")}
                     />*/}
-
-                <Text style={styles.mainHeader}>welcome back,</Text>
+            </View>
+            <Text style={styles.mainHeader}>welcome back,</Text>
                 <Text
                     style={[
                         styles.mainHeader,
@@ -29,8 +29,7 @@ const Home = (props) => {
                     Matias
                 </Text>
 
-                <Text style={styles.paraStyle}>{description} </Text>
-            </View>
+            <Text style={styles.paraStyle}>{description} </Text>
 
             <View style={styles.menuStyle}>
                 <View style={styles.lineStyle}></View>
@@ -51,6 +50,7 @@ const styles = StyleSheet.create({
     mainContainer: {
         height: "100%",
         display: "flex",
+        alignItems: "center",
         justifyContent: "space-between",
         paddingHorizontal: 20,
         backgroundColor: "#0059AB",

@@ -8,9 +8,9 @@ import {
 } from "react-native";
 import React from "react";
 import Menu from "./Menu";
-import {
-    Cabin
-} from  "@fontsource/cabin";
+// import {
+//     Cabin
+// } from  "@fontsource/cabin";
 
 const About = () => {
     return (

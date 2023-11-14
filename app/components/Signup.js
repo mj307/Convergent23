@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 // import { NavLink, useNavigate } from 'react-router-dom';
 // import {  createUserWithEmailAndPassword  } from 'react-native-firebase/auth';
-import { auth } from '../firebase';
+//import { auth } from '../firebase';
 // import { getAnalytics } from "react-native-firebase/analytics";
 // import { getAuth } from "react-native-firebase/auth";
 // import { getFirestore } from "react-native-firebase/firestore";
@@ -175,6 +175,5 @@ export default Signup
 //     )
 // }
  
-// export default Login
 
 

@@ -15,7 +15,7 @@ const Home = (props) => {
                         source={require("../../assets/logo.jpeg")}
                     />*/}
 
-                <Text style={styles.mainHeader}>LearnLink</Text>
+                <Text style={styles.mainHeader}>Find A</Text>
                 <Text
                     style={[
                         styles.mainHeader,
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         display: "flex",
         justifyContent: "space-between",
         paddingHorizontal: 20,
-        backgroundColor: "#1e1e1e",
+        backgroundColor: "#f1eee9",
         textAlign: "center",
     },
 
@@ -75,9 +75,8 @@ const styles = StyleSheet.create({
     },
 
     mainHeader: {
-        padding: '10px',
         fontSize: 30,
-        color: "white",
+        color: "#344055",
         textTransform: "uppercase",
         fontFamily: "Nunito_600SemiBold",
     },
@@ -95,7 +94,7 @@ const styles = StyleSheet.create({
     lineStyle: {
         marginBottom: 10,
         borderWidth: 0.5,
-        borderColor: "white",
+        borderColor: "grey",
     },
 });
 

@@ -10,12 +10,6 @@ import {
     JosefinSans_400Regular,
     JosefinSans_500Medium,
 } from "@expo-google-fonts/josefin-sans";
-import Cabin from "@fontsource/cabin"; // Defaults to weight 400
-// import {
-//     useFonts,
-//     Cabin_400Regular,
-//     Cabin_500Medium,
-// } from  "@fontsource/cabin";
 import { Nunito_600SemiBold, Nunito_700Bold } from "@expo-google-fonts/nunito";
 import AppLoading from "expo-app-loading";
 import Login from "./components/Login";

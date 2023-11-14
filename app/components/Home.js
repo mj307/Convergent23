@@ -4,7 +4,7 @@ import Menu from "./Menu";
 
 const Home = (props) => {
     const description =
-        "need to fill in with buttons";
+        "your groups";
 
     return (
         <View style={styles.mainContainer}>
@@ -15,17 +15,18 @@ const Home = (props) => {
                         source={require("../../assets/logo.jpeg")}
                     />*/}
 
-                <Text style={styles.mainHeader}>LearnLink</Text>
+                <Text style={styles.mainHeader}>welcome back,</Text>
                 <Text
                     style={[
                         styles.mainHeader,
                         {
-                            fontSize: 33,
-                            color: "#000000",
+                            fontSize: 60,
+                            color: "#FBFDFF",
                             marginTop: 0,
+                            fontFamily: "Cabin"
                         },
                     ]}>
-                    Study Group
+                    Matias
                 </Text>
 
                 <Text style={styles.paraStyle}>{description} </Text>
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
         display: "flex",
         justifyContent: "space-between",
         paddingHorizontal: 20,
-        backgroundColor: "#1e1e1e",
+        backgroundColor: "#0059AB",
         textAlign: "center",
     },
 
@@ -78,8 +79,7 @@ const styles = StyleSheet.create({
         padding: '10px',
         fontSize: 30,
         color: "white",
-        textTransform: "uppercase",
-        fontFamily: "Nunito_600SemiBold",
+        fontFamily: "Cabin",
     },
 
     paraStyle: {

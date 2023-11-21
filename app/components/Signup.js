@@ -6,7 +6,6 @@ import React, {useState} from 'react';
 // import { getAuth } from "react-native-firebase/auth";
 // import { getFirestore } from "react-native-firebase/firestore";
 import {StyleSheet, Text, View} from "react-native";
-import React from 'react'
 import { Button } from 'react-native'
 import Menu from "./Menu";
 

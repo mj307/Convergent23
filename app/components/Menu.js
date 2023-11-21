@@ -1,6 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { TouchableOpacity, View, StyleSheet, Text, Image } from "react-native";
+import dash from "./Dashboard";
 import Login from "./Login";
 import Signup from "./Signup";
 import Contact from "./Contact";
@@ -24,7 +25,7 @@ const Menu = () => {
 
             <TouchableOpacity
                 style={styles.buttonStyle}
-                onPress={() => navigation.navigate(Signup)}>
+                onPress={() => navigation.navigate(dash)}>
                 <Image
                     style={styles.iconStyle}
                     source={{

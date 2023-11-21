@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet } from 'react-native';
+import {StyleSheet, Text, View} from "react-native";
 
 const Dashboard = () => {
   return (
@@ -37,7 +37,7 @@ const Dashboard = () => {
               </Text>
             </View>
           </View>
-          <Image
+          {/* <Image
             style={styles['female-profile']}
             source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/female-profile-2@2x.png' }}
           />
@@ -56,13 +56,13 @@ const Dashboard = () => {
           <Image
             style={styles['male-user-2']}
             source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/male-user@2x.png' }}
-          />
+          /> */}
           <View style={styles.rectangle-2} />
         </View>
-        <Image
+        {/* <Image
           style={styles.notification}
           source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/notification@2x.png' }}
-        />
+        /> */}
       </View>
     </View>
   );
@@ -326,3 +326,5 @@ const styles = StyleSheet.create({
     width: 40,
   },
 });
+
+export default Dashboard;

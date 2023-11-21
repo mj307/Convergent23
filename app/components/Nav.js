@@ -10,7 +10,7 @@ export default class Nav extends Component {
                         <li><NavLink to="/"> Home </NavLink></li>
                         <li><NavLink to="/login"> Login </NavLink></li>
                         <li><NavLink to="/about"> About </NavLink></li>
-                        <li><NavLink to="/dashboard"> Dashboard </NavLink></li>
+                        <li><NavLink to="/dashboard"> Dash</NavLink></li>
                         <li><NavLink to="/user"> User </NavLink></li>
                         <li><NavLink to="/contact"> Contact </NavLink></li>
                     </ul>

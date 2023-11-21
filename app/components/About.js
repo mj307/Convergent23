@@ -12,122 +12,64 @@ import Menu from "./Menu";
 //     Cabin
 // } from  "@fontsource/cabin";
 
+
 const About = () => {
     return (
         <View style={styles.aboutContainer}>
-            <Text style={styles.mainHeader}> lol </Text>
-            <Text style={styles.paraStyle}> lol </Text>
-
-            {/*<View>
-                <Image
-                    style={styles.imgStyle}
-                    source={{
-                        uri: "",
-                    }}
-                />
-            </View>*/}
+            <Text style={styles.mainHeader}> My Classes </Text>
 
             <View style={styles.aboutLayout}>
-                <Text style={styles.aboutSubHeader}> About Us </Text>
-                <Text style={[styles.paraStyle, styles.aboutPara]}>
-                    its converging time
-                </Text>
+                <Text style={[styles.aboutSubHeader]}> GOV 310L </Text>
             </View>
 
-            <Text style={styles.mainHeader}> Follow us </Text>
-
-            <View style={styles.menuContainer}>
-                <TouchableOpacity
-                    style={styles.buttonStyle}
-                    onPress={() =>
-                        Linking.openURL("")
-                    }>
-                    <Image
-                        style={styles.iconStyle}
-                        source={{
-                            uri: "https://cdn-icons-png.flaticon.com/512/2111/2111463.png",
-                        }}
-                    />
-                </TouchableOpacity>
-
-                <TouchableOpacity
-                    style={styles.buttonStyle}
-                    onPress={() =>
-                        Linking.openURL(
-                            ""
-                        )
-                    }>
-                    <Image
-                        style={styles.iconStyle}
-                        source={{
-                            uri: "https://cdn-icons-png.flaticon.com/512/187/187210.png",
-                        }}
-                    />
-                </TouchableOpacity>
-
-                <TouchableOpacity
-                    style={styles.buttonStyle}
-                    onPress={() => Linking.openURL("")}>
-                    <Image
-                        style={styles.iconStyle}
-                        source={{
-                            uri: "https://cdn-icons-png.flaticon.com/512/906/906361.png",
-                        }}
-                    />
-                </TouchableOpacity>
+            <View style={styles.aboutLayout2}>
+                <Text style={[styles.aboutSubHeader]}> ARH 302 </Text>
             </View>
+
             <View style={styles.menuStyle}>
-                <View style={styles.lineStyle}></View>
+                <View style={styles.menuContainer}></View>
                 <Menu />
-                <View
-                    style={[
-                        styles.lineStyle,
-                        {
-                            marginVertical: 15,
-                        },
-                    ]}></View>
             </View>
-        </View>
-    );
-};
-
-const styles = StyleSheet.create({
-    aboutContainer: {
-        display: "flex",
-        alignItems: "center",
-    },
-
-    imgStyle: {
-        width: 150,
-        height: 150,
-        borderRadius: 100,
-    },
+            </View>
+    )
+}
+                    
+    const styles = StyleSheet.create({
     mainHeader: {
-        fontSize: 18,
-        color: "#344055",
-        textTransform: "uppercase",
-        fontWeight: "500",
+        fontSize: 50,
+        color: "#ffffff",
+        fontWeight: "550",
         marginTop: 50,
         marginBottom: 10,
-        fontFamily: "JosefinSans_700Bold",
+        fontFamily: "Cabin",
+        alignItems: "center",
     },
     paraStyle: {
-        fontSize: 18,
-        color: "#7d7d7d",
+        fontSize: 20,
+        color: "#ffffff",
         paddingBottom: 30,
     },
     aboutLayout: {
-        backgroundColor: "#4c5dab",
+        backgroundColor: "#0059AB",
         paddingHorizontal: 30,
         marginVertical: 30,
+        borderRadius: 20,
+        alignItems: "center",
+    },
+    aboutLayout2: {
+        backgroundColor: "#ffc300",
+        paddingHorizontal: 30,
+        marginVertical: 30,
+        borderRadius: 20,
+        alignItems: "center",
     },
     aboutSubHeader: {
-        fontSize: 18,
+        fontSize: 40,
         color: "#fff",
         textTransform: "uppercase",
         fontWeight: "500",
         marginVertical: 15,
-        fontFamily: "JosefinSans_700Bold",
+        fontFamily: "Cabin",
         alignSelf: "center",
     },
     aboutPara: {

@@ -27,7 +27,7 @@ const Contact = ({ navigation }) => {
 
     return (
         <View style={styles.mainContainer}>
-            <Text style={styles.mainHeader}> Contact Us </Text>
+            <Text style={styles.mainHeader}> Enter Class Code </Text>
 
 
             <View style={styles.inputContainer}>
@@ -49,7 +49,7 @@ const Contact = ({ navigation }) => {
                 ]}
                 disabled={!agree}
                 onPress={submit}>
-                <Text style={styles.buttonText}> Enter </Text>
+                <Text style={styles.buttonText}> Join </Text>
             </TouchableOpacity>
             <View style={styles.menuStyle}>
                 <View style={styles.lineStyle}></View>
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
         backgroundColor: "#d9d9d9",
     },
-    
+
     labels: {
         fontWeight: "bold",
         // fontSize: 15,

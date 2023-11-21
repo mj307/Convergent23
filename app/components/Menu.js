@@ -29,7 +29,18 @@ const Menu = () => {
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/material-rounded/192/5e5e5e/book.png",
+                        uri: "https://img.icons8.com/material-rounded/100/5e5e5e/book.png",
+                    }}
+                />
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                style={styles.buttonStyle}
+                onPress={() => navigation.navigate(Login)}>
+                <Image
+                    style={styles.centerIcon}
+                    source={{
+                        uri: "https://img.icons8.com/material-rounded/96/FFFFFF/plus-math--v1.png",
                     }}
                 />
             </TouchableOpacity>
@@ -64,15 +75,26 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-evenly",
         backgroundColor: '#F4F4F4',
-        padding: '10px'
+        borderRadius: '10px',
     },
     textStyle: {
         textTransform: "uppercase",
     },
     iconStyle: {
         width: "100%",
-        height: 50,
+        height: 30,
         aspectRatio: 1,
+        bottom: 0,
+    },
+    centerIcon: {
+        backgroundColor: '#4E75EB',
+        height: 60,
+        aspectRatio: 1,
+        borderRadius: 60,
+        shadowColor: '#171717',
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
+        bottom: 20,
     },
 });
 

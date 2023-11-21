@@ -9,7 +9,7 @@ return (
       <View style={styles.div}>
         <Text style={styles['welcome-back']}>
           <Text style={styles['text-wrapper']}>Welcome Back,</Text>
-          <Text style={styles.span}>Matias!</Text>
+          <Text style={styles.span}>{'\n'}Akil!</Text>
         </Text>
         <View style={styles['overlap-group']}>
           <Text style={styles['text-wrapper-2']}>Your Groups</Text>
@@ -125,7 +125,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 22,
     whiteSpace: 'nowrap',
-    width: 101,
   },
   'text-wrapper-3': {
     color: '#9b9b9b',
@@ -148,7 +147,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     lineHeight: 'normal',
     position: 'absolute',
-    top: 425,
+    top: 420,
     whiteSpace: 'nowrap',
   },
   'menu-bar': {
@@ -156,10 +155,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Cabin, Helvetica',
     fontSize: 20,
     fontWeight: '500',
-    left: 70,
     letterSpacing: 0,
     lineHeight: 'normal',
-    position: 'absolute',
+    position: 'center',
     top: 530,
     whiteSpace: 'nowrap',
   },
@@ -296,35 +294,35 @@ const styles = StyleSheet.create({
     height: 50,
     left: 32,
     position: 'absolute',
-    top: 462,
+    top: 455,
     width: 55,
   },
   'male-user': {
     height: 50,
     left: 99,
     position: 'absolute',
-    top: 462,
+    top: 455,
     width: 56,
   },
   img: {
     height: 50,
     left: 167,
     position: 'absolute',
-    top: 462,
+    top: 455,
     width: 55,
   },
   'female-profile-2': {
     height: 50,
     left: 302,
     position: 'absolute',
-    top: 462,
+    top: 455,
     width: 55,
   },
   'male-user-2': {
     height: 50,
     left: 233,
     position: 'absolute',
-    top: 462,
+    top: 455,
     width: 55,
   },
   'rectangle-2': {

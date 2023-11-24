@@ -19,7 +19,7 @@ import {
 import { Nunito_600SemiBold, Nunito_700Bold } from "@expo-google-fonts/nunito";
 import AppLoading from "expo-app-loading";
 import Login from "./components/Login";
-import Signup from "./components/Signup";
+import Signin from "./components/Signin";
 import User from "./components/User";
 
 export default function App() {
@@ -103,8 +103,8 @@ export default function App() {
 
                 {/* CourseDetails Screen  */}
                 <Stack.Screen
-                    name="Signup"
-                    component={Signup}
+                    name="Signin"
+                    component={Signin}
                     options={{
                         headerTitleStyle: {
                             fontSize: 25,

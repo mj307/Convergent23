@@ -14,6 +14,7 @@ export default class Nav extends Component {
                         <li><NavLink to="/dashboard"> Dash</NavLink></li>
                         <li><NavLink to="/user"> User </NavLink></li>
                         <li><NavLink to="/contact"> Contact </NavLink></li>
+                        <li><NavLink to="/classmates"> Classmate </NavLink></li>
                     </ul>
                 </nav>
             </div>

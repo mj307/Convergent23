@@ -1,14 +1,17 @@
 import {
+    Linking,
     StyleSheet,
     Text,
     View,
     TextInput,
     TouchableOpacity,
     Alert,
+    Image,
 } from "react-native";
 import React, { useState } from "react";
 import Checkbox from "expo-checkbox";
 import Menu from "./Menu";
+
 
 
 const Contact = ({ navigation }) => {
@@ -26,116 +29,143 @@ const Contact = ({ navigation }) => {
     };
 
     return (
-        <View style={styles.mainContainer}>
-            <Text style={styles.mainHeader}> Enter Class Code </Text>
+        <View style={styles.ClassmateContainer}>
+            <Text style={styles.mainHeader}> your results </Text>
 
+            <View style={styles.classContain}>
+                <Text style={[styles.SectionHeader]}> suggested groups </Text>
+                <View styles={styles.GroupRecs}>
+                    <View style={styles.ClassmateLayout}>
+                        <View>
+                            <Text style={[styles.ClassmateHeader]}> Government </Text>
+                            <Text style={[styles.ClassmateSubheader]}> auditory </Text>
+                            <Text style={[styles.ClassmateSubheader]}> PCL Thursdays @ 4 </Text>
+                        </View>
 
-            <View style={styles.inputContainer}>
-                <TextInput
-                style={styles.input}
-                placeholder="Class Code"
-                value={classCode}
-                onChangeText={text => setClassCode(text)}
-                />
+                        <Image
+                            style={styles.dropDown}
+                            source={{
+                                uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-down.png"
+                            }}
+                        />
+                    </View>
+                    <View style={styles.ClassmateLayout}>
+                        <View>
+                            <Text style={[styles.ClassmateHeader]}> Biology </Text>
+                            <Text style={[styles.ClassmateSubheader]}> visual </Text>
+                            <Text style={[styles.ClassmateSubheader]}> Welch Monday @ 6 </Text>
+                        </View>
+                    </View>
+                </View>
+
+                <Text style={[styles.SectionHeader]}> suggested friends </Text>
+
+                <View style={styles.menuContainer}>
+                    <Menu />
+                </View>
             </View>
-
-
-            <TouchableOpacity
-                style={[
-                    styles.buttonStyle,
-                    {
-                        backgroundColor: agree ? "#0059AB" : "#0059AB",
-                    },
-                ]}
-                disabled={!agree}
-                onPress={submit}>
-                <Text style={styles.buttonText}> Join </Text>
-            </TouchableOpacity>
-            <View style={styles.menuStyle}>
-                <View style={styles.lineStyle}></View>
-                <Menu />
-                <View
-                    style={[
-                        styles.lineStyle,
-                        {
-                            marginVertical: 15,
-                        },
-                    ]}></View>
-            </View>
-
-            
         </View>
     );
-};
+                    }
+
 
 const styles = StyleSheet.create({
-    mainContainer: {
-        height: "100%",
-        paddingHorizontal: 30,
-        backgroundColor: "#fff",
+    ClassmateContainer: {
+        display: "flex",
+        flex: 2,
+        backgroundColor: '#4E75EB',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
-    mainHeader: {
+    GroupRecs: {
+        paddingHorizontal: 20,
+        marginVertical: 20,
+        borderRadius: 20,
+        display: 'flex',
+        alignItems: 'center', 
+        position: 'relative',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        flex: 1,
+    },
+
+    imgStyle: {
+        width: 42,
+        height: 42,
+    },
+
+    sectionHeader: {
         fontSize: 20,
-        color: "#344055",
+        color: "#9C9C9C",
         fontWeight: "500",
-        paddingTop: 20,
-        paddingBottom: 15,
-        fontFamily: "JosefinSans_500Medium",
-        textTransform: "capitalize",
+        lineHeight: "24.3px",
     },
-    description: {
+
+    mainHeader: {
+        fontSize: 30,
+        color: "#ffffff",
+        fontWeight: "550",
+        marginTop: 50,
+        marginBottom: 10,
+        alignContent: 'flex-end',
+    },
+    classContain: {
+        width: '390px',
+        backgroundColor: 'white',
+        alignItems: 'center',
+        borderRadius: '10px',
+    },
+    ClassmateLayout: {
+        backgroundColor: "#F4F4F4",
+        width: '325px',
+        height: '68px',
+        paddingHorizontal: 20,
+        marginVertical: 20,
+        borderRadius: 20,
+        display: 'flex',
+        alignItems: 'center', 
+        position: 'relative',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignSelf: "center",
+    },
+    ClassmateHeader: {
         fontSize: 20,
-        color: "#7d7d7d",
-        paddingBottom: 20,
-        fontFamily: "JosefinSans_400Light",
-        lineHeight: 25,
+        color: "#5E5E5E",
+        fontWeight: "500",
+        lineHeight: "24.3px",
+        alignSelf: "center",
+    },
+    ClassmateSubheader: {
+        fontSize: 12,
+        color: "#B3B3B3",
+        fontWeight: "500",
+        lineHeight: "14.58px",
+        marginVertical: 5,
+        alignSelf: "center",
+    },
+    studyGroupsHeading: {
+        fontSize: 12,
+        color: "#5E5E5E",
+        fontWeight: "500",
+        lineHeight: '14.58px',
+    },
+    dropDown: {
+        width: 42,
+        height: 42,
+
+    },
+    menuContainer: {
+        marginTop: '20px',
+        width: "320px",
+        height: '60px',
+        justifyContent: "space-evenly",
     },
 
-    inputContainer: {
-        marginTop: 20,
-        backgroundColor: "#d9d9d9",
-    },
-
-    labels: {
-        fontWeight: "bold",
-        // fontSize: 15,
-        color: "#7d7d7d",
-        paddingBottom: 5,
-        fontFamily: "JosefinSans_300Light",
-        lineHeight: 25,
-    },
-    inputStyle: {
-        borderWidth: 1,
-        borderColor: "rgba(0, 0, 0, 0.3)",
-        paddingHorizontal: 15,
-        paddingVertical: 6,
-        borderRadius: 2,
-    },
-    multiineStyle: {
-        paddingVertical: 4,
-    },
-    buttonStyle: {
-        borderRadius: 5,
-        paddingVertical: 10,
-        paddingHorizontal: 18,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        marginVertical: 30,
-    },
-    buttonText: {
-        color: "#eee",
-    },
-    wrapper: {
-        display: "flex",
-        flexDirection: "row",
-        marginTop: 20,
-        fontFamily: "JosefinSans_300Light",
-    },
-    wrapperText: {
-        marginLeft: 10,
-        color: "#7d7d7d",
-        fontFamily: "JosefinSans_300Light",
+    iconStyle: {
+        width: "100%",
+        height: 50,
+        aspectRatio: 1,
     },
 });
 

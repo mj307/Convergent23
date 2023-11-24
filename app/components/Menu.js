@@ -2,11 +2,12 @@ import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { TouchableOpacity, View, StyleSheet, Text, Image } from "react-native";
 import Login from "./Login";
-import Signup from "./Signin";
+import Signin from "./Signin";
 import Contact from "./Contact";
-import FindClassmates from "./FindClassmates";
+import Home from "./Home";
+import Classmate from "./ClassCode";
 import User from "./User";
-import About from "./About";
+import Class from "./Classes";
 
 const Menu = () => {
     const navigation = useNavigation();
@@ -14,7 +15,7 @@ const Menu = () => {
         <View style={styles.menuContainer}>
             <TouchableOpacity
                 style={styles.buttonStyle}
-                onPress={() => navigation.navigate(Login)}>
+                onPress={() => navigation.navigate(Home)}>
                 <Image
                     style={styles.iconStyle}
                     source={{
@@ -25,7 +26,7 @@ const Menu = () => {
 
             <TouchableOpacity
                 style={styles.buttonStyle}
-                onPress={() => navigation.navigate(Signup)}>
+                onPress={() => navigation.navigate(Classmate)}>
                 <Image
                     style={styles.iconStyle}
                     source={{
@@ -36,7 +37,7 @@ const Menu = () => {
 
             <TouchableOpacity
                 style={styles.buttonStyle}
-                onPress={() => navigation.navigate(Login)}>
+                onPress={() => navigation.navigate(Signin)}>
                 <Image
                     style={styles.centerIcon}
                     source={{
@@ -47,7 +48,7 @@ const Menu = () => {
 
             <TouchableOpacity
                 style={styles.buttonStyle}
-                onPress={() => navigation.navigate(About)}>
+                onPress={() => navigation.navigate(Classmate)}>
                 <Image
                     style={styles.iconStyle}
                     source={{
@@ -58,11 +59,11 @@ const Menu = () => {
 
             <TouchableOpacity
                 style={styles.buttonStyle}
-                onPress={() => navigation.navigate(Contact)}>
+                onPress={() => navigation.navigate(Class)}>
                 <Image
                     style={styles.iconStyle}
                     source={{
-                        uri: "https://img.icons8.com/material-rounded/192/5e5e5e/settings.png",
+                        uri: "https://img.icons8.com/ios-glyphs/192/5e5e5e/preschool.png",
                     }}
                 />
             </TouchableOpacity>

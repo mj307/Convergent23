@@ -17,6 +17,7 @@ import Login from "./components/Login";
 import Signin from "./components/Signin";
 import User from "./components/User";
 import Classmate from "./components/ClassCode";
+import Messages from "./components/Messages";
 
 export default function App() {
     const Stack = createNativeStackNavigator();
@@ -93,6 +94,15 @@ export default function App() {
                 <Stack.Screen
                     name="Signin"
                     component={Signin}
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+
+                {/* Message Screen  */}
+                <Stack.Screen
+                    name="Message"
+                    component={Messages}
                     options={{
                         headerShown: false,
                     }}

@@ -6,6 +6,7 @@ import Signin from "./Signin";
 import Contact from "./Contact";
 import Home from "./Home";
 import Classmate from "./ClassCode";
+import Messages from "./Messages";
 import User from "./User";
 import Class from "./Classes";
 
@@ -26,7 +27,7 @@ const Menu = () => {
 
             <TouchableOpacity
                 style={styles.buttonStyle}
-                onPress={() => navigation.navigate(Classmate)}>
+                onPress={() => navigation.navigate(Contact)}>
                 <Image
                     style={styles.iconStyle}
                     source={{
@@ -48,7 +49,7 @@ const Menu = () => {
 
             <TouchableOpacity
                 style={styles.buttonStyle}
-                onPress={() => navigation.navigate(Classmate)}>
+                onPress={() => navigation.navigate(Messages)}>
                 <Image
                     style={styles.iconStyle}
                     source={{
@@ -83,7 +84,7 @@ const styles = StyleSheet.create({
     },
     iconStyle: {
         width: "100%",
-        height: 30,
+        height: 25,
         aspectRatio: 1,
         bottom: 0,
     },

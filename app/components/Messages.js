@@ -8,82 +8,65 @@ import {
 } from "react-native";
 import React from "react";
 import Menu from "./Menu";
-// import {
-//     Cabin
-// } from  "@fontsource/cabin";
 
-const About = () => {
+const Messages = () => {
     return (
-        <View style={styles.aboutContainer}>
-            <Text style={styles.mainHeader}> your classes </Text>
+        <View style={styles.mainContainer}>
+            <Text style={styles.mainHeader}> your messages </Text>
 
-            {/*<View>
-                <Image
-                    style={styles.imgStyle}
-                    source={{
-                        uri: "",
-                    }}
-                />
-            </View>*/}
             <View style={styles.classContain}>
-                <View style={styles.aboutLayout}>
+                <View style={styles.messageLayout}>
                     <Image
                         style={styles.imgStyle}
                         source={{
-                            uri: "https://img.icons8.com/ios-glyphs/190/5e5e5e/museum.png",
+                            uri: "https://img.icons8.com/material/190/5e5e5e/user-male-circle--v1.png",
                         }}
                     />
                     <View>
-                        <Text style={[styles.aboutHeader]}> Government </Text>
-                        <Text style={[styles.aboutSubheader]}> taught by Dr. G </Text>
+                        <Text style={[styles.messageHeader]}> Rohan Patel </Text>
+                        <Text style={[styles.messageSubheader]}> Yo .... </Text>
                     </View>
                     <View>
-                        <Text style={[styles.studyGroupsHeading]}> study </Text>
-                        <Text style={[styles.studyGroupsHeading]}> groups </Text>
                     </View>
                     <Image
                         style={styles.dropDown}
                         source={{
-                            uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-down.png"
+                            uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-right.png"
                         }}
                     />
                 </View>
-                <View style={styles.aboutLayout}>
+                <View style={styles.messageLayout}>
                     <Image
                         style={styles.imgStyle}
                         source={{
-                            uri: "https://img.icons8.com/ios-glyphs/190/5e5e5e/easel.png",
+                            uri: "https://img.icons8.com/material/190/5e5e5e/user-male-circle--v1.png",
                         }}
                     />
                     <View>
-                        <Text style={[styles.aboutHeader]}> Art History </Text>
-                        <Text style={[styles.aboutSubheader]}> taught by Dr. X </Text>
+                        <Text style={[styles.messageHeader]}> Rohan Patel </Text>
+                        <Text style={[styles.messageSubheader]}> ... </Text>
                     </View>
                     <View>
-                        <Text style={[styles.studyGroupsHeading]}> study </Text>
-                        <Text style={[styles.studyGroupsHeading]}> groups </Text>
                     </View>
                     <Image
                         style={styles.dropDown}
                         source={{
-                            uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-down.png"
+                            uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-right.png"
                         }}
                     />
                 </View>
-                <View style={styles.aboutLayout}>
+                <View style={styles.messageLayout}>
                     <Image
                         style={styles.imgStyle}
                         source={{
-                            uri: "https://img.icons8.com/ios-glyphs/190/5e5e5e/dna-helix--v1.png",
+                            uri: "https://img.icons8.com/material/190/5e5e5e/user-female-circle--v1.png",
                         }}
                     />
                     <View>
-                        <Text style={[styles.aboutHeader]}> Biology </Text>
-                        <Text style={[styles.aboutSubheader]}> taught by Dr. A </Text>
+                        <Text style={[styles.messageHeader]}> Rohan Patel </Text>
+                        <Text style={[styles.messageSubheader]}> meet at pcl @ 3:00 ? </Text>
                     </View>
                     <View>
-                        <Text style={[styles.studyGroupsHeading]}> study </Text>
-                        <Text style={[styles.studyGroupsHeading]}> groups </Text>
                     </View>
                     <Image
                         style={styles.dropDown}
@@ -102,7 +85,7 @@ const About = () => {
 };
 
 const styles = StyleSheet.create({
-    aboutContainer: {
+    mainContainer: {
         display: "flex",
         flex: 1,
         backgroundColor: '#4E75EB',
@@ -129,7 +112,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderRadius: '10px',
     },
-    aboutLayout: {
+    messageLayout: {
         backgroundColor: "#F4F4F4",
         width: '325px',
         height: '68px',
@@ -142,14 +125,14 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
     },
-    aboutHeader: {
+    messageHeader: {
         fontSize: 20,
         color: "#5E5E5E",
         fontWeight: "500",
         lineHeight: "24.3px",
         alignSelf: "center",
     },
-    aboutSubheader: {
+    messageSubheader: {
         fontSize: 12,
         color: "#B3B3B3",
         fontWeight: "500",
@@ -179,7 +162,7 @@ const styles = StyleSheet.create({
         width: "100%",
         height: 50,
         aspectRatio: 1,
-    },
+    }
 });
 
-export default About;
+export default Messages;

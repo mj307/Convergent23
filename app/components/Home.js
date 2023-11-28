@@ -19,8 +19,9 @@ return (
             <Menu />
           </View>
           <View style={styles.overlap}>
+            <Text style={styles['bigNum']}>1</Text>
             <Text style={styles['group-members']}>
-              Group 1{'\n'}
+              {'\n'}
               course{'\n'}
               learning style{'\n'}
               next meeting
@@ -32,10 +33,10 @@ return (
             <Text style={styles['text-wrapper-6']}>Group 2</Text>
           </View>
           <View style={styles['overlap-3']}>
-            <Text style={styles['text-wrapper-7']}>*Class Name*</Text>
-            <Text style={styles['text-wrapper-8']}></Text>
+            <Text style={styles['text-wrapper-7']}>Biology</Text>
+            <Text style={styles['text-wrapper-8']}>taught by Dr. A</Text>
             <View style={styles['overlap-4']}>
-              <Text style={styles['text-wrapper-9']}>#</Text>
+              <Text style={styles['text-wrapper-9']}>4</Text>
               <Text style={styles['study-groups']}>
                 Study{'\n'}
                 Groups
@@ -81,6 +82,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width: '100%',
   },
+  bigNum: {
+    top: 15,
+    left: 23,
+    color: '#4e75eb',
+    fontSize: '40px',
+  },
   div: {
     backgroundColor: '#4e75eb',
     height: 844,
@@ -113,6 +120,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 244,
     width: 390,
+    borderRadius: 10,
   },
   'text-wrapper-2': {
     color: '#9b9b9b',
@@ -179,7 +187,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     lineHeight: 'normal',
     position: 'absolute',
-    top: 27,
+    top: 50,
     width: 109,
   },
   'overlap-2': {
@@ -266,7 +274,7 @@ const styles = StyleSheet.create({
     width: 62,
   },
   'text-wrapper-9': {
-    color: '#5d5d5d',
+    color: '#4E75EB',
     fontFamily: 'Cabin, Helvetica',
     fontSize: 20,
     fontWeight: '500',

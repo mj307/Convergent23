@@ -30,6 +30,17 @@ const Contact = ({ navigation }) => {
 
     return (
         <View style={styles.ClassmateContainer}>
+            <View style={styles.topContain}>
+                <Text style={[styles.SectionHeader]}>you're 20x more productive
+                {'\n'}by taking notes on the materials.
+                </Text>
+                <Text style={[styles.bigNum]}>
+                    56%
+                </Text>
+                <Text style={[styles.DarkerSectionHeader]}> of students share this with you!
+                </Text>
+            </View>
+
             <Text style={styles.mainHeader}> your results </Text>
 
             <View style={styles.classContain}>
@@ -77,6 +88,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
+    bigNum: {
+        color: '#4e75eb',
+        fontSize: '100px',
+    },
     GroupRecs: {
         paddingHorizontal: 20,
         marginVertical: 20,
@@ -94,9 +109,16 @@ const styles = StyleSheet.create({
         height: 42,
     },
 
-    sectionHeader: {
+    SectionHeader: {
         fontSize: 20,
-        color: "#9C9C9C",
+        color: "#A3A3A3",
+        fontWeight: "500",
+        lineHeight: "24.3px",
+    },
+
+    DarkerSectionHeader: {
+        fontSize: 20,
+        color: "#434343",
         fontWeight: "500",
         lineHeight: "24.3px",
     },
@@ -114,6 +136,13 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         alignItems: 'center',
         borderRadius: '10px',
+    },
+    topContain: {
+        width: '332px',
+        backgroundColor: 'white',
+        alignItems: 'center',
+        borderRadius: '30px',
+        padding: '20px',
     },
     ClassmateLayout: {
         backgroundColor: "#F4F4F4",

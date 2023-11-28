@@ -44,7 +44,7 @@ const About = () => {
                     <Image
                         style={styles.dropDown}
                         source={{
-                            uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-down.png"
+                            uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-right.png"
                         }}
                     />
                 </View>
@@ -74,6 +74,28 @@ const About = () => {
                     <Image
                         style={styles.imgStyle}
                         source={{
+                            uri: "https://img.icons8.com/ios-glyphs/190/5e5e5e/book.png",
+                        }}
+                    />
+                    <View>
+                        <Text style={[styles.aboutHeader]}> Literature </Text>
+                        <Text style={[styles.aboutSubheader]}> taught by Dr. U </Text>
+                    </View>
+                    <View>
+                        <Text style={[styles.studyGroupsHeading]}> study </Text>
+                        <Text style={[styles.studyGroupsHeading]}> groups </Text>
+                    </View>
+                    <Image
+                        style={styles.dropDown}
+                        source={{
+                            uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-right.png"
+                        }}
+                    />
+                </View>
+                <View style={styles.aboutLayout}>
+                    <Image
+                        style={styles.imgStyle}
+                        source={{
                             uri: "https://img.icons8.com/ios-glyphs/190/5e5e5e/dna-helix--v1.png",
                         }}
                     />
@@ -88,7 +110,29 @@ const About = () => {
                     <Image
                         style={styles.dropDown}
                         source={{
-                            uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-down.png"
+                            uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-right.png"
+                        }}
+                    />
+                </View>
+                <View style={styles.aboutLayout}>
+                    <Image
+                        style={styles.imgStyle}
+                        source={{
+                            uri: "https://img.icons8.com/ios-glyphs/190/5e5e5e/beaker.png",
+                        }}
+                    />
+                    <View>
+                        <Text style={[styles.aboutHeader]}> Chemistry </Text>
+                        <Text style={[styles.aboutSubheader]}> taught by Dr. W </Text>
+                    </View>
+                    <View>
+                        <Text style={[styles.studyGroupsHeading]}> study </Text>
+                        <Text style={[styles.studyGroupsHeading]}> groups </Text>
+                    </View>
+                    <Image
+                        style={styles.dropDown}
+                        source={{
+                            uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-right.png"
                         }}
                     />
                 </View>
@@ -134,7 +178,7 @@ const styles = StyleSheet.create({
         width: '325px',
         height: '68px',
         paddingHorizontal: 20,
-        marginVertical: 20,
+        marginVertical: 10,
         borderRadius: 20,
         display: 'flex',
         alignItems: 'center', 

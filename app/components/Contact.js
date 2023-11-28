@@ -49,7 +49,7 @@ const Contact = ({ navigation }) => {
                     <View style={styles.ClassmateLayout}>
                         <View>
                             <Text style={[styles.ClassmateHeader]}> Government </Text>
-                            <Text style={[styles.ClassmateSubheader]}> auditory </Text>
+                            <Text style={[styles.ClassmateSubheader]}> visual </Text>
                             <Text style={[styles.ClassmateSubheader]}> PCL Thursdays @ 4 </Text>
                         </View>
 
@@ -66,6 +66,12 @@ const Contact = ({ navigation }) => {
                             <Text style={[styles.ClassmateSubheader]}> visual </Text>
                             <Text style={[styles.ClassmateSubheader]}> Welch Monday @ 6 </Text>
                         </View>
+                        <Image
+                            style={styles.dropDown}
+                            source={{
+                                uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-down.png"
+                            }}
+                        />
                     </View>
                 </View>
 
@@ -147,7 +153,7 @@ const styles = StyleSheet.create({
     ClassmateLayout: {
         backgroundColor: "#F4F4F4",
         width: '325px',
-        height: '68px',
+        height: '75px',
         paddingHorizontal: 20,
         marginVertical: 20,
         borderRadius: 20,

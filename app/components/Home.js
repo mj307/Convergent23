@@ -22,8 +22,8 @@ return (
             <Text style={styles['bigNum']}>1</Text>
             <Text style={styles['group-members']}>
               {'\n'}
-              course{'\n'}
-              learning style{'\n'}
+              biology{'\n'}
+              visual{'\n'}
               next meeting
             </Text>
           </View>

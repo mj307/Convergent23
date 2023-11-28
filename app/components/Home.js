@@ -21,9 +21,9 @@ return (
           <View style={styles.overlap}>
             <Text style={styles['group-members']}>
               Group 1{'\n'}
-              *Members*{'\n'}
-              *Members Studying*{'\n'}
-              *Where Members are*
+              course{'\n'}
+              learning style{'\n'}
+              next meeting
             </Text>
           </View>
           <View style={styles['overlap-2']}>

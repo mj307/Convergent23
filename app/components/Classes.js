@@ -118,7 +118,7 @@ const About = () => {
                     <Image
                         style={styles.imgStyle}
                         source={{
-                            uri: "https://img.icons8.com/ios-glyphs/190/5e5e5e/beaker.png",
+                            uri: "https://img.icons8.com/ios-glyphs/190/5e5e5e/test-tube.png",
                         }}
                     />
                     <View>

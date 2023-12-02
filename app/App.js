@@ -3,19 +3,21 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./components/Home";
-//import About from "./components/About";
+import About from "./components/Classes";
 import Contact from "./components/Contact";
 import {
     useFonts,
     JosefinSans_400Regular,
     JosefinSans_500Medium,
 } from "@expo-google-fonts/josefin-sans";
+// import Cabin from "@fontsource/cabin"; // Defaults to weight 400
 import { Nunito_600SemiBold, Nunito_700Bold } from "@expo-google-fonts/nunito";
 import AppLoading from "expo-app-loading";
 import Login from "./components/Login";
-//import Signup from "./components/Signup";
+import Signin from "./components/Signin";
 import User from "./components/User";
-
+import Classmate from "./components/ClassCode";
+import Messages from "./components/Messages";
 export default function App() {
     const Stack = createNativeStackNavigator();
 

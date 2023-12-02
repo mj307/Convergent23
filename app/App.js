@@ -18,10 +18,6 @@ import Signin from "./components/Signin";
 import User from "./components/User";
 import Classmate from "./components/ClassCode";
 import Messages from "./components/Messages";
-<<<<<<< HEAD
-=======
-
->>>>>>> 49780e93d2c775a0b57cd06b1201141ade4d6cfd
 export default function App() {
     const Stack = createNativeStackNavigator();
 

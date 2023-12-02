@@ -3,99 +3,351 @@ import React from "react";
 import Menu from "./Menu";
 
 const Home = (props) => {
-    const description =
-        "need to fill in with buttons";
 
-    return (
-        <View style={styles.mainContainer}>
-            <View style={styles.homeTop}>
-                    {/*<Image
-                        style={styles.headerImage}
-                        resizeMode="contain"
-                        source={require("../../assets/logo.jpeg")}
-                    />*/}
-
-                <Text style={styles.mainHeader}>Find A</Text>
-                <Text
-                    style={[
-                        styles.mainHeader,
-                        {
-                            fontSize: 33,
-                            color: "#000000",
-                            marginTop: 0,
-                        },
-                    ]}>
-                    Study Group
-                </Text>
-
-                <Text style={styles.paraStyle}>{description} </Text>
+return (
+    <View style={styles.dashboard}>
+      <View style={styles.div}>
+        <Text style={styles['welcome-back']}>
+          <Text style={styles['text-wrapper']}>Welcome Back,</Text>
+          <Text style={styles.span}>{'\n'}Akil!</Text>
+        </Text>
+        <View style={styles['overlap-group']}>
+          <Text style={styles['text-wrapper-2']}>Your Groups</Text>
+          <Text style={styles['text-wrapper-3']}>Your Classes</Text>
+          <Text style={styles['text-wrapper-4']}>Your Friends</Text>
+          <View style={styles['menu-bar']}>
+            <Menu />
+          </View>
+          <View style={styles.overlap}>
+            <Text style={styles['bigNum']}>1</Text>
+            <Text style={styles['group-members']}>
+              {'\n'}
+              biology{'\n'}
+              visual{'\n'}
+              next meeting
+            </Text>
+          </View>
+          <View style={styles['overlap-2']}>
+            <Text style={styles['text-wrapper-5']}>Group 1</Text>
+            <View style={styles.rectangle} />
+            <Text style={styles['text-wrapper-6']}>Group 2</Text>
+          </View>
+          <View style={styles['overlap-3']}>
+            <Text style={styles['text-wrapper-7']}>Biology</Text>
+            <Text style={styles['text-wrapper-8']}>taught by Dr. A</Text>
+            <View style={styles['overlap-4']}>
+              <Text style={styles['text-wrapper-9']}>4</Text>
+              <Text style={styles['study-groups']}>
+                Study{'\n'}
+                Groups
+              </Text>
             </View>
-
-            <View style={styles.menuStyle}>
-                <View style={styles.lineStyle}></View>
-                <Menu />
-                <View
-                    style={[
-                        styles.lineStyle,
-                        {
-                            marginVertical: 15,
-                        },
-                    ]}></View>
-            </View>
+          </View>
+          <Image
+            style={styles['female-profile']}
+            source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/female-profile-2@2x.png' }}
+          />
+          <Image
+            style={styles['male-user']}
+            source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/male-user-1@2x.png' }}
+          />
+          <Image
+            style={styles.img}
+            source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/female-profile-2@2x.png' }}
+          />
+          <Image
+            style={styles['female-profile-2']}
+            source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/female-profile-2@2x.png' }}
+          />
+          <Image
+            style={styles['male-user-2']}
+            source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/male-user@2x.png' }}
+          />
+          <View style={styles.rectangle-2} />
         </View>
-    );
+        <Image
+          style={styles.notification}
+          source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/notification@2x.png' }}
+        />
+      </View>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
-    mainContainer: {
-        height: "100%",
-        display: "flex",
-        justifyContent: "space-between",
-        paddingHorizontal: 20,
-        backgroundColor: "#f1eee9",
-        textAlign: "center",
-    },
-
-    homeTop: {
-        // height: "100%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        paddingHorizontal: 10,
-    },
-
-    headerImage: {
-        height: undefined,
-        width: "100%",
-        aspectRatio: 1,
-        display: "flex",
-        alignItems: "stretch",
-        marginTop: 50,
-        borderRadius: 20,
-    },
-
-    mainHeader: {
-        fontSize: 30,
-        color: "#344055",
-        textTransform: "uppercase",
-        fontFamily: "Nunito_600SemiBold",
-    },
-
-    paraStyle: {
-        textAlign: "left",
-        fontSize: 19,
-        color: "#7d7d7d",
-        marginTop: 30,
-        paddingBottom: 50,
-        lineHeight: 26,
-        fontFamily: "JosefinSans_400Regular",
-    },
-
-    lineStyle: {
-        marginBottom: 10,
-        borderWidth: 0.5,
-        borderColor: "grey",
-    },
+  dashboard: {
+    backgroundColor: '#4e75eb',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    width: '100%',
+  },
+  bigNum: {
+    top: 15,
+    left: 23,
+    color: '#4e75eb',
+    fontSize: '40px',
+  },
+  div: {
+    backgroundColor: '#4e75eb',
+    height: 844,
+    position: 'relative',
+    width: 390,
+  },
+  'welcome-back': {
+    color: 'transparent',
+    fontFamily: 'Cabin, Helvetica',
+    fontSize: 30,
+    fontWeight: '500',
+    left: 37,
+    letterSpacing: 0,
+    lineHeight: 'normal',
+    position: 'absolute',
+    top: 99,
+  },
+  'text-wrapper': {
+    color: '#fbfdff',
+  },
+  span: {
+    color: '#fafdff',
+    fontSize: 50,
+  },
+  'overlap-group': {
+    backgroundColor: '#ffffff',
+    borderRadius: '30px 30px 0px 0px',
+    height: 600,
+    left: 0,
+    position: 'absolute',
+    top: 244,
+    width: 390,
+    borderRadius: 10,
+  },
+  'text-wrapper-2': {
+    color: '#9b9b9b',
+    fontFamily: 'Cabin, Helvetica',
+    fontSize: 20,
+    fontWeight: '500',
+    left: 32,
+    letterSpacing: 0,
+    lineHeight: 'normal',
+    position: 'absolute',
+    top: 22,
+    whiteSpace: 'nowrap',
+  },
+  'text-wrapper-3': {
+    color: '#9b9b9b',
+    fontFamily: 'Cabin, Helvetica',
+    fontSize: 20,
+    fontWeight: '500',
+    left: 32,
+    letterSpacing: 0,
+    lineHeight: 'normal',
+    position: 'absolute',
+    top: 224,
+    whiteSpace: 'nowrap',
+  },
+  'text-wrapper-4': {
+    color: '#9b9b9b',
+    fontFamily: 'Cabin, Helvetica',
+    fontSize: 20,
+    fontWeight: '500',
+    left: 32,
+    letterSpacing: 0,
+    lineHeight: 'normal',
+    position: 'absolute',
+    top: 420,
+    whiteSpace: 'nowrap',
+  },
+  'menu-bar': {
+    color: '#9b9b9b',
+    fontFamily: 'Cabin, Helvetica',
+    fontSize: 20,
+    fontWeight: '500',
+    letterSpacing: 0,
+    lineHeight: 'normal',
+    position: 'center',
+    top: 530,
+    whiteSpace: 'nowrap',
+  },
+  overlap: {
+    backgroundColor: '#f4f4f4',
+    borderRadius: 10,
+    height: 148,
+    left: 32,
+    position: 'absolute',
+    top: 58,
+    width: 155,
+  },
+  'group-members': {
+    color: '#5d5d5d',
+    fontFamily: 'Cabin, Helvetica',
+    fontSize: 15,
+    fontWeight: '500',
+    left: 25,
+    letterSpacing: 0,
+    lineHeight: 'normal',
+    position: 'absolute',
+    top: 50,
+    width: 109,
+  },
+  'overlap-2': {
+    borderRadius: 10,
+    height: 148,
+    left: 202,
+    position: 'absolute',
+    top: 58,
+    width: 155,
+  },
+  'text-wrapper-5': {
+    color: '#5d5d5d',
+    fontFamily: 'Cabin, Helvetica',
+    fontSize: 15,
+    fontWeight: '500',
+    left: 36,
+    letterSpacing: 0,
+    lineHeight: 'normal',
+    position: 'absolute',
+    top: 59,
+    whiteSpace: 'nowrap',
+    width: 46,
+  },
+  rectangle: {
+    backgroundColor: '#f4f4f4',
+    borderRadius: 10,
+    height: 148,
+    left: 0,
+    position: 'absolute',
+    top: 0,
+    width: 155,
+  },
+  'text-wrapper-6': {
+    color: '#5d5d5d',
+    fontFamily: 'Cabin, Helvetica',
+    fontSize: 15,
+    fontWeight: '500',
+    left: 53,
+    letterSpacing: 0,
+    lineHeight: 'normal',
+    position: 'absolute',
+    top: 59,
+    whiteSpace: 'nowrap',
+    width: 50,
+  },
+  'overlap-3': {
+    backgroundColor: '#f4f4f4',
+    borderRadius: 10,
+    height: 44,
+    left: 32,
+    position: 'absolute',
+    top: 259,
+    width: 325,
+  },
+  'text-wrapper-7': {
+    color: '#5d5d5d',
+    fontFamily: 'Cabin, Helvetica',
+    fontSize: 12,
+    fontWeight: '500',
+    left: 55,
+    letterSpacing: 0,
+    lineHeight: 'normal',
+    position: 'absolute',
+    top: 8,
+    width: 50,
+  },
+  'text-wrapper-8': {
+    color: '#b3b3b3',
+    fontFamily: 'Cabin, Helvetica',
+    fontSize: 8,
+    fontWeight: '500',
+    left: 55,
+    letterSpacing: 0,
+    lineHeight: 'normal',
+    position: 'absolute',
+    top: 23,
+    width: 126,
+  },
+  'overlap-4': {
+    height: 24,
+    left: 217,
+    position: 'absolute',
+    top: 9,
+    width: 62,
+  },
+  'text-wrapper-9': {
+    color: '#4E75EB',
+    fontFamily: 'Cabin, Helvetica',
+    fontSize: 20,
+    fontWeight: '500',
+    left: 0,
+    letterSpacing: 0,
+    lineHeight: 'normal',
+    position: 'absolute',
+    textAlign: 'center',
+    top: 0,
+    width: 35,
+  },
+  'study-groups': {
+    color: '#b3b3b3',
+    fontFamily: 'Cabin, Helvetica',
+    fontSize: 8,
+    fontWeight: '500',
+    left: 31,
+    letterSpacing: 0,
+    lineHeight: 'normal',
+    position: 'absolute',
+    top: 2,
+    width: 31,
+  },
+  'female-profile': {
+    height: 50,
+    left: 32,
+    position: 'absolute',
+    top: 455,
+    width: 55,
+  },
+  'male-user': {
+    height: 50,
+    left: 99,
+    position: 'absolute',
+    top: 455,
+    width: 56,
+  },
+  img: {
+    height: 50,
+    left: 167,
+    position: 'absolute',
+    top: 455,
+    width: 55,
+  },
+  'female-profile-2': {
+    height: 50,
+    left: 302,
+    position: 'absolute',
+    top: 455,
+    width: 55,
+  },
+  'male-user-2': {
+    height: 50,
+    left: 233,
+    position: 'absolute',
+    top: 455,
+    width: 55,
+  },
+  'rectangle-2': {
+    backgroundColor: '#f4f4f4',
+    height: 38,
+    left: 37,
+    position: 'absolute',
+    top: 546,
+    width: 320,
+  },
+  notification: {
+    height: 40,
+    left: 322,
+    position: 'absolute',
+    top: 24,
+    width: 40,
+  },
 });
 
 export default Home;

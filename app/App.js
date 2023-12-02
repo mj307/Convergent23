@@ -3,7 +3,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./components/Home";
-import About from "./components/About";
+//import About from "./components/About";
 import Contact from "./components/Contact";
 import {
     useFonts,
@@ -13,7 +13,7 @@ import {
 import { Nunito_600SemiBold, Nunito_700Bold } from "@expo-google-fonts/nunito";
 import AppLoading from "expo-app-loading";
 import Login from "./components/Login";
-import Signup from "./components/Signup";
+//import Signup from "./components/Signup";
 import User from "./components/User";
 
 export default function App() {

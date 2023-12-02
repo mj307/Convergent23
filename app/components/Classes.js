@@ -17,14 +17,6 @@ const About = () => {
         <View style={styles.aboutContainer}>
             <Text style={styles.mainHeader}> your classes </Text>
 
-            {/*<View>
-                <Image
-                    style={styles.imgStyle}
-                    source={{
-                        uri: "",
-                    }}
-                />
-            </View>*/}
             <View style={styles.classContain}>
                 <View style={styles.aboutLayout}>
                     <Image
@@ -47,6 +39,9 @@ const About = () => {
                             uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-right.png"
                         }}
                     />
+                </View>
+                <View style={styles.aboutLayout}>
+
                 </View>
                 <View style={styles.aboutLayout}>
                     <Image

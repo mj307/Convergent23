@@ -18,6 +18,10 @@ import Signin from "./components/Signin";
 import User from "./components/User";
 import Classmate from "./components/ClassCode";
 import Messages from "./components/Messages";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 49780e93d2c775a0b57cd06b1201141ade4d6cfd
 export default function App() {
     const Stack = createNativeStackNavigator();
 
@@ -49,11 +53,7 @@ export default function App() {
                     name="Login"
                     component={Login}
                     options={{
-                        headerTitleStyle: {
-                            fontSize: 25,
-                            fontFamily: "Nunito_600SemiBold",
-                        },
-                        headerTitleAlign: "center",
+                        headerShown: false,
                     }}
                 />
 
@@ -62,12 +62,7 @@ export default function App() {
                     name="User"
                     component={User}
                     options={{
-                        headerTitleStyle: {
-                            fontSize: 25,
-                            fontFamily: "Nunito_600SemiBold",
-                        },
-                        headerTitle: "Students Data",
-                        headerTitleAlign: "center",
+                        headerShown: false,
                     }}
                 />
 
@@ -76,11 +71,16 @@ export default function App() {
                     name="About"
                     component={About}
                     options={{
-                        headerTitleStyle: {
-                            fontSize: 25,
-                            fontFamily: "Nunito_600SemiBold",
-                        },
-                        headerTitleAlign: "center",
+                        headerShown: false,
+                    }}
+                />
+
+                {/* Find Classmates Screen  */}
+                <Stack.Screen
+                    name="Find Classmates"
+                    component={Classmate}
+                    options={{
+                        headerShown: false,
                     }}
                 />
 
@@ -89,24 +89,25 @@ export default function App() {
                     name="Contact"
                     component={Contact}
                     options={{
-                        headerTitleStyle: {
-                            fontSize: 25,
-                            fontFamily: "Nunito_600SemiBold",
-                        },
-                        headerTitleAlign: "center",
+                        headerShown: false,
                     }}
                 />
 
-                {/* CourseDetails Screen  */}
+                {/* Signin Screen  */}
                 <Stack.Screen
-                    name="Signup"
-                    component={Signup}
+                    name="Signin"
+                    component={Signin}
                     options={{
-                        headerTitleStyle: {
-                            fontSize: 25,
-                            fontFamily: "Nunito_600SemiBold",
-                        },
-                        headerTitleAlign: "center",
+                        headerShown: false,
+                    }}
+                />
+
+                {/* Message Screen  */}
+                <Stack.Screen
+                    name="Message"
+                    component={Messages}
+                    options={{
+                        headerShown: false,
                     }}
                 />
             </Stack.Navigator>

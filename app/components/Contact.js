@@ -87,9 +87,10 @@ const Contact = ({ navigation }) => {
                 <View style={styles.GroupRecs}>
                 <View style={styles.FriendLayout}>
                         <View>
-                            <View styles={styles.GroupRecs}>
-                                <Text style={[styles.ClassmateHeader]}> 1 </Text>
-                            </View>
+                        <Image
+                        style={styles.imgStyle}
+                            source={require("../assets/female-profile.png")}
+                        />
                             
                             <Text style={[styles.ClassmateSubheader]}> 
                             rohan patel{'\n'} 
@@ -102,9 +103,10 @@ const Contact = ({ navigation }) => {
                     </View>
                     <View style={styles.FriendLayout}>
                         <View>
-                            <View styles={styles.GroupRecs}>
-                                <Text style={[styles.ClassmateHeader]}> 1 </Text>
-                            </View>
+                        <Image
+                        style={styles.imgStyle}
+                            source={require("../assets/female-profile.png")}
+                        />
                             <Text style={[styles.ClassmateSubheader]}> 
                             rohan patel{'\n'} 
                             60% similarity {'\n'}
@@ -116,6 +118,10 @@ const Contact = ({ navigation }) => {
                     </View>
                     <View style={styles.FriendLayout}>
                         <View>
+                        <Image
+                        style={styles.imgStyle}
+                            source={require("../assets/female-profile.png")}
+                        />
                             <Text style={[styles.ClassmateSubheader]}> 
                             rohan patel{'\n'} 
                             60% similarity {'\n'}

@@ -9,12 +9,12 @@ return (
       <View style={styles.div}>
         <Text style={styles['welcome-back']}>
           <Text style={styles['text-wrapper']}>Welcome Back,</Text>
-          <Text style={styles.span}>{'\n'}Akil!</Text>
+          <Text style={styles.span}>{'\n'}akil!</Text>
         </Text>
         <View style={styles['overlap-group']}>
-          <Text style={styles['text-wrapper-2']}>Your Groups</Text>
-          <Text style={styles['text-wrapper-3']}>Your Classes</Text>
-          <Text style={styles['text-wrapper-4']}>Your Friends</Text>
+          <Text style={styles['text-wrapper-2']}>your groups</Text>
+          <Text style={styles['text-wrapper-3']}>your classes</Text>
+          <Text style={styles['text-wrapper-4']}>your friends</Text>
           <View style={styles['menu-bar']}>
             <Menu />
           </View>
@@ -45,23 +45,23 @@ return (
           </View>
           <Image
             style={styles['female-profile']}
-            source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/female-profile-2@2x.png' }}
+            source={require("../assets/female-profile.png")}
           />
           <Image
             style={styles['male-user']}
-            source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/male-user-1@2x.png' }}
+            source={require("../assets/male-user.png")}
           />
           <Image
             style={styles.img}
-            source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/female-profile-2@2x.png' }}
+            source={require("../assets/female-profile.png")}
           />
           <Image
             style={styles['female-profile-2']}
-            source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/female-profile-2@2x.png' }}
+            source={require("../assets/female-profile.png")}
           />
           <Image
             style={styles['male-user-2']}
-            source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/male-user@2x.png' }}
+            source={require("../assets/male-user.png")}
           />
           <View style={styles.rectangle-2} />
         </View>
@@ -69,6 +69,8 @@ return (
           style={styles.notification}
           source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/notification@2x.png' }}
         />
+        <Image style = {styles.logoTop}
+        source={require('../Assets/LearnLink_Logo_White.png')}/>
       </View>
     </View>
   );
@@ -344,6 +346,13 @@ const styles = StyleSheet.create({
   notification: {
     height: 40,
     left: 322,
+    position: 'absolute',
+    top: 24,
+    width: 40,
+  },
+  logoTop: {
+    height: 40,
+    left: 10,
     position: 'absolute',
     top: 24,
     width: 40,

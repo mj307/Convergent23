@@ -3,6 +3,7 @@ import {
     StyleSheet,
     Text,
     TouchableOpacity,
+    ImageBackground,
     View,
     Image,
 } from "react-native";
@@ -62,18 +63,65 @@ const About = () => {
                     />
                 </View>
                 <View style={styles.aboutLayout2}>
-                    <View style={[styles.headercontainer]}>
+                    <View>
+                        <View style={[styles.headercontainer]}>
                         <View style={[styles.whitebox]}>
-                            <Image style = {styles.dashimg}
-                            source={require('../Assets/ClassesDash.png')}/>
+                            <View style={[styles.headercontainer]}>
+                                <Text style={styles.bigNum}>1</Text>
+                                <View style={styles.space2} />
+                                <Text style={styles.imgtxt2}>visual{'\n'}
+                                PCL</Text>
+                            </View>
+                            
+                            <ImageBackground style = {styles.dashimg}
+                            source={require('../Assets/ClassesDash.png')}>
+                                <View style={styles.overlay}>
+                                    <Text style={styles.imgnumtxt}>3</Text>
+                                    <Text style={styles.imgtxt}>spots left</Text>
+                                </View>
+                            </ImageBackground>
+                            
+                            <View style={[styles.asktojoin]}>
+                                <Text style={[styles.asktojointxt]}> ask to join</Text>
+                            </View>
                         </View>
+                        
                         <View style={[styles.whitebox]}>
-                            <Image style = {styles.dashimg}
-                            source={require('../Assets/ClassesDash.png')}/>
+                            <View style={[styles.headercontainer]}>
+                                <Text style={styles.bigNum}>1</Text>
+                                <View style={styles.space2} />
+                                <Text style={styles.imgtxt2}>visual{'\n'}
+                                Welch</Text>
+                            </View>
+                            
+                            <ImageBackground style = {styles.dashimg}
+                            source={require('../Assets/ClassesDash.png')}>
+                                <View style={styles.overlay}>
+                                    <Text style={styles.imgnumtxt}>5</Text>
+                                    <Text style={styles.imgtxt}>spots left</Text>
+                                </View>
+                            </ImageBackground>
+                            
+                            <View style={[styles.asktojoin]}>
+                                <Text style={[styles.asktojointxt]}> ask to join</Text>
+                            </View>
                         </View>
                     </View>
+                    <View style={[styles.headercontainer2]}>
+                        <Image style = {styles.imgSmall}
+                            source={require('../Assets/ellipse-341.png')}/>
+                        <Image style = {styles.imgSmall}
+                            source={require('../Assets/ellipse-35.png')}/>
+                        <Image style = {styles.imgSmall}
+                            source={require('../Assets/ellipse-35.png')}/>
+                        <Image style = {styles.imgSmall}
+                            source={require('../Assets/ellipse-35.png')}/>
+                    </View>
+                    </View>
+                    
                 </View>
-                <View style={styles.aboutLayout}>
+                
+                {/* <View style={styles.aboutLayout}>
                     <Image
                         style={styles.imgStyle}
                         source={{
@@ -94,7 +142,7 @@ const About = () => {
                             uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-down.png"
                         }}
                     />
-                </View>
+                </View> */}
                 <View style={styles.aboutLayout}>
                     <Image
                         style={styles.imgStyle}
@@ -185,10 +233,19 @@ const styles = StyleSheet.create({
       space: {
         width: 280, // Adjust the width for the space between the images
       },
+      space2: {
+        width: 75, // Adjust the width for the space between the images
+      },
     headercontainer: {
         flexDirection: 'row',
         alignItems: 'center',
-      },
+    },
+    headercontainer2: {
+        marginTop: '10px',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
     plusicon: {
         marginRight: 10,
         width: 30,
@@ -202,8 +259,17 @@ const styles = StyleSheet.create({
         borderRadius: '10px',
         marginLeft: '5px',
         marginRight: '5px',
+        padding: '8px',
       },
-
+      bigNum: {
+        color: '#4E75EB',
+        fontSize: '40px',
+    },
+    imgtxt2: {
+        color: '#666666',
+        fontSize: '8px',
+        textAlign: 'right',
+    },
     aboutContainer: {
         display: "flex",
         flex: 1,
@@ -216,9 +282,18 @@ const styles = StyleSheet.create({
         width: 42,
         height: 42,
     },
+    imgSmall: {
+        width: 10,
+        height: 10,
+        marginLeft: 2,
+        marginRight: 2,
+    },
     dashimg: {
+        marginLeft: 20,
+        marginTop: -25,
         width: 109,
         height: 109,
+        marginBottom: -25,
     },
 
     mainHeader: {
@@ -229,11 +304,39 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         alignContent: 'flex-end',
     },
+    asktojoin: {
+        backgroundColor: '#4E75EB',
+        width: '132px',
+        height: '21px',
+        borderRadius: '10px',
+    },
+    asktojointxt: {
+        color: 'white',
+        fontSize: '10px',
+        padding: '3px',
+        textAlign: 'center',
+    },
+    imgtxt: {
+        color: '#666666',
+        fontSize: '8px',
+    },
+    imgnumtxt: {
+        color: '#4E75EB',
+        fontSize: '15px',
+    },
+    overlay: {
+        flex: 1,
+        backgroundColor: 'rgba(0,0,0,0.0)', // Adjust the alpha (last value) for transparency
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
     classContain: {
         width: '390px',
         backgroundColor: 'white',
         alignItems: 'center',
-        borderRadius: '10px',
+        borderTopLeftRadius: '30px',
+        borderTopRightRadius: '30px',
+        paddingTop: '10px',
     },
     aboutLayout: {
         backgroundColor: "#F4F4F4",
@@ -251,8 +354,8 @@ const styles = StyleSheet.create({
     aboutLayout2: {
         backgroundColor: "#F4F4F4",
         width: '325px',
-        paddingVertical: 20,
-        paddingHorizontal: 20,
+        paddingVertical: 10,
+        paddingHorizontal: 5,
         marginVertical: 10,
         borderRadius: 20,
         display: 'flex',

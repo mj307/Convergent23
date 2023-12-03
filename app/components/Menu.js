@@ -94,6 +94,12 @@ const styles = StyleSheet.create({
         justifyContent: "space-evenly",
         backgroundColor: '#F4F4F4',
         borderRadius: '10px',
+        height: '38px',
+        paddingTop: '5px',
+        marginBottom: '20px',
+        marginLeft: '10px',
+        marginRight: '10px',
+        marginTop: '15px',
     },
     textStyle: {
         textTransform: "uppercase",

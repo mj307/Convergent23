@@ -30,9 +30,19 @@ const Contact = ({ navigation }) => {
 
     return (
         <View style={styles.ClassmateContainer}>
+            <View style={styles.topbar}>
+                <Image style = {styles.imgStyle}
+                    source={require('../Assets/LearnLink_Logo_White.png')}/>
+                    {/* Add some space between the images */}
+                    <View style={styles.space} />
+                    <Image
+                    style={styles.imgStyle}
+                    source={{ uri: 'https://c.animaapp.com/Rl7tNbDQ/img/notification@2x.png' }}
+                    />
+            </View>
             <View style={styles.topContain}>
-                <Text style={[styles.SectionHeader]}>you're 20x more productive
-                {'\n'}by taking notes on the materials.
+                <Text style={[styles.SectionHeader]}>you're more productive studying
+                {'\n'}in silence.
                 </Text>
                 <Text style={[styles.bigNum]}>
                     56%
@@ -42,38 +52,34 @@ const Contact = ({ navigation }) => {
             </View>
 
             <Text style={styles.mainHeader}> your results </Text>
+        
 
             <View style={styles.classContain}>
                 <Text style={[styles.SectionHeader]}> suggested groups </Text>
-                <View styles={styles.GroupRecs}>
-                    <View style={styles.ClassmateLayout}>
+                
+                
+                <View style={styles.GroupRecs}>
+                <View style={styles.ClassmateLayout}>
                         <View>
-                            <Text style={[styles.ClassmateHeader]}> Government </Text>
+                            <View styles={styles.GroupRecs}>
+                                <Text style={[styles.ClassmateHeader]}> 1 </Text>
+                            </View>
+                            
                             <Text style={[styles.ClassmateSubheader]}> visual </Text>
                             <Text style={[styles.ClassmateSubheader]}> PCL Thursdays @ 4 </Text>
                         </View>
 
-                        <Image
-                            style={styles.dropDown}
-                            source={{
-                                uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-down.png"
-                            }}
-                        />
+                        
                     </View>
                     <View style={styles.ClassmateLayout}>
                         <View>
-                            <Text style={[styles.ClassmateHeader]}> Biology </Text>
+                            <Text style={[styles.ClassmateHeader]}> 2 </Text>
                             <Text style={[styles.ClassmateSubheader]}> visual </Text>
                             <Text style={[styles.ClassmateSubheader]}> Welch Monday @ 6 </Text>
                         </View>
-                        <Image
-                            style={styles.dropDown}
-                            source={{
-                                uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-down.png"
-                            }}
-                        />
                     </View>
-                </View>
+            </View>
+                    
 
                 <Text style={[styles.SectionHeader]}> suggested friends </Text>
 
@@ -87,6 +93,24 @@ const Contact = ({ navigation }) => {
 
 
 const styles = StyleSheet.create({
+    topbar: {
+        flexDirection: 'row',
+        justifyContent: 'space-between', // Aligns items at each end of the container
+        alignItems: 'center',
+        paddingHorizontal: 16, // Optional: Add horizontal padding for spacing from the edges
+    },
+    imgStyle: {
+        width: 42,
+        height: 42,
+    },
+    space: {
+        width: 280, // Adjust the width for the space between the images
+    },
+    headercontainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
     ClassmateContainer: {
         display: "flex",
         flex: 2,
@@ -99,14 +123,15 @@ const styles = StyleSheet.create({
         fontSize: '100px',
     },
     GroupRecs: {
-        paddingHorizontal: 20,
-        marginVertical: 20,
-        borderRadius: 20,
-        display: 'flex',
-        alignItems: 'center', 
-        position: 'relative',
+        marginTop: '10px',
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        alignItems: 'center',
+        justifyContent: 'center',
+        // marginVertical: 20,
+        // borderRadius: 20,
+        //display: 'flex',
+        //alignItems: 'center', 
+        //position: 'relative',
         flex: 1,
     },
 
@@ -151,24 +176,24 @@ const styles = StyleSheet.create({
         padding: '20px',
     },
     ClassmateLayout: {
+        margin: '10px',
         backgroundColor: "#F4F4F4",
-        width: '325px',
-        height: '75px',
         paddingHorizontal: 20,
         marginVertical: 20,
         borderRadius: 20,
+        width: '155px',
+        height: '132px',
         display: 'flex',
         alignItems: 'center', 
         position: 'relative',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignSelf: "center",
     },
     ClassmateHeader: {
-        fontSize: 20,
-        color: "#5E5E5E",
+        fontSize: 40,
+        color: "#4E75EB",
         fontWeight: "500",
-        lineHeight: "24.3px",
+        lineHeight: "48.6px",
         alignSelf: "center",
     },
     ClassmateSubheader: {

@@ -259,6 +259,7 @@ const styles = StyleSheet.create({
         borderRadius: '10px',
         marginLeft: '5px',
         marginRight: '5px',
+        paddingTop: '2px',
         padding: '8px',
       },
       bigNum: {

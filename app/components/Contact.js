@@ -80,8 +80,51 @@ const Contact = ({ navigation }) => {
                     </View>
             </View>
                     
-
+            <View style={styles.classContain}>
                 <Text style={[styles.SectionHeader]}> suggested friends </Text>
+                
+                
+                <View style={styles.GroupRecs}>
+                <View style={styles.FriendLayout}>
+                        <View>
+                            <View styles={styles.GroupRecs}>
+                                <Text style={[styles.ClassmateHeader]}> 1 </Text>
+                            </View>
+                            
+                            <Text style={[styles.ClassmateSubheader]}> 
+                            rohan patel{'\n'} 
+                            60% similarity {'\n'}
+                            biology
+                            </Text>
+                        </View>
+
+                        
+                    </View>
+                    <View style={styles.FriendLayout}>
+                        <View>
+                            <View styles={styles.GroupRecs}>
+                                <Text style={[styles.ClassmateHeader]}> 1 </Text>
+                            </View>
+                            <Text style={[styles.ClassmateSubheader]}> 
+                            rohan patel{'\n'} 
+                            60% similarity {'\n'}
+                            biology
+                            </Text>
+                        </View>
+
+                        
+                    </View>
+                    <View style={styles.FriendLayout}>
+                        <View>
+                            <Text style={[styles.ClassmateSubheader]}> 
+                            rohan patel{'\n'} 
+                            60% similarity {'\n'}
+                            biology
+                            </Text>
+                        </View>
+                    </View>
+            </View>
+            </View>
 
                 <View style={styles.menuContainer}>
                     <Menu />
@@ -183,6 +226,20 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         width: '155px',
         height: '132px',
+        display: 'flex',
+        alignItems: 'center', 
+        position: 'relative',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
+    FriendLayout: {
+        margin: '10px',
+        backgroundColor: "#F4F4F4",
+        paddingHorizontal: 20,
+        marginVertical: 20,
+        borderRadius: 20,
+        width: '100px',
+        height: '107px',
         display: 'flex',
         alignItems: 'center', 
         position: 'relative',

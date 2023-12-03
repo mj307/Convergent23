@@ -5,6 +5,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./components/Home";
 import About from "./components/Classes";
 import Contact from "./components/Contact";
+import Chat from "./components/Chat";
+import Chat1 from "./components/Chat1";
+
 import {
     useFonts,
     JosefinSans_400Regular,
@@ -41,7 +44,7 @@ export default function App() {
                     options={{
                         headerShown: false,
                     }}>
-                    {(props) => <Home {...props} channelName={"Thapa Technical"} />}
+                    {(props) => <Home {...props} channelName={"LearnLink"} />}
                 </Stack.Screen>
 
                 {/* Login Screen  */}
@@ -99,6 +102,19 @@ export default function App() {
                 />
 
                 {/* Message Screen  */}
+
+                <Stack.Screen
+                    name="Chat"
+                    component={Chat}
+                    options={{ headerShown: false }}
+                />
+
+                <Stack.Screen
+                    name="Chat1"
+                    component={Chat1}
+                    options={{ headerShown: false }}
+                />
+
                 <Stack.Screen
                     name="Message"
                     component={Messages}

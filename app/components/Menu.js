@@ -9,6 +9,22 @@ import Classmate from "./ClassCode";
 import Messages from "./Messages";
 import User from "./User";
 import Class from "./Classes";
+import Chat1 from "./Chat1";
+import Quiz from "./Quiz";
+import Chat from "./Chat";
+import QuizQuestion2 from "./QuizQuestion2";
+import QuizQuestion3 from "./QuizQuestion3";
+import QuizQuestion4 from "./QuizQuestion4";
+import QuizQuestion5 from "./QuizQuestion5";
+import QuizQuestion6 from "./QuizQuestion6";
+import QuizQuestion7 from "./QuizQuestion7";
+import QuizQuestion8 from "./QuizQuestion8";
+import QuizQuestion13 from "./QuizQuestion13";
+import QuizQuestion12 from "./QuizQuestion12";
+import QuizQuestion11 from "./QuizQuestion11";
+import QuizQuestion10 from "./QuizQuestion10";
+import QuizQuestion9 from "./QuizQuestion9";
+import QuizQuestion1 from "./QuizQuestion1";
 
 const Menu = () => {
     const navigation = useNavigation();
@@ -49,7 +65,7 @@ const Menu = () => {
 
             <TouchableOpacity
                 style={styles.buttonStyle}
-                onPress={() => navigation.navigate(Messages)}>
+                onPress={() => navigation.navigate(Chat)}>
                 <Image
                     style={styles.iconStyle}
                     source={{

@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import Menu from "./Menu";
+import {useNavigation} from "@react-navigation/native";
+import QuizQuestion1 from "./QuizQuestion1";
 
 const Login = () => {
   const [classCode, setClassCode] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const navigation = useNavigation();
 
   const handleLogin = () => {
     // Add your login logic here
+    navigation.navigate(QuizQuestion1)
   };
 
   return (

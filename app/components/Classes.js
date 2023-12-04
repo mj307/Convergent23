@@ -121,7 +121,7 @@ const About = () => {
                     
                 </View>
                 
-                {/* <View style={styles.aboutLayout}>
+                <View style={styles.aboutLayout}>
                     <Image
                         style={styles.imgStyle}
                         source={{
@@ -142,7 +142,7 @@ const About = () => {
                             uri: "https://img.icons8.com/ios-glyphs/90/4e75eb/circled-chevron-down.png"
                         }}
                     />
-                </View> */}
+                </View>
                 <View style={styles.aboutLayout}>
                     <Image
                         style={styles.imgStyle}
@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     headercontainer2: {
-        marginTop: '10px',
+        marginTop: 10,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
@@ -256,19 +256,19 @@ const styles = StyleSheet.create({
       },
       whitebox: {
         backgroundColor: '#FFFFFF',
-        borderRadius: '10px',
-        marginLeft: '5px',
-        marginRight: '5px',
-        paddingTop: '2px',
-        padding: '8px',
+        borderRadius: 10,
+        marginLeft: 5,
+        marginRight: 5,
+        paddingTop: 2,
+        padding: 8,
       },
       bigNum: {
         color: '#4E75EB',
-        fontSize: '40px',
+        fontSize: 40,
     },
     imgtxt2: {
         color: '#666666',
-        fontSize: '8px',
+        fontSize: 8,
         textAlign: 'right',
     },
     aboutContainer: {
@@ -307,23 +307,23 @@ const styles = StyleSheet.create({
     },
     asktojoin: {
         backgroundColor: '#4E75EB',
-        width: '132px',
-        height: '21px',
-        borderRadius: '10px',
+        width: 132,
+        height: 21,
+        borderRadius: 10,
     },
     asktojointxt: {
         color: 'white',
-        fontSize: '10px',
-        padding: '3px',
+        fontSize: 10,
+        padding: 3,
         textAlign: 'center',
     },
     imgtxt: {
         color: '#666666',
-        fontSize: '8px',
+        fontSize: 8,
     },
     imgnumtxt: {
         color: '#4E75EB',
-        fontSize: '15px',
+        fontSize: 15,
     },
     overlay: {
         flex: 1,
@@ -332,17 +332,17 @@ const styles = StyleSheet.create({
         alignItems: 'center',
       },
     classContain: {
-        width: '390px',
+        width: 390,
         backgroundColor: 'white',
         alignItems: 'center',
-        borderTopLeftRadius: '30px',
-        borderTopRightRadius: '30px',
-        paddingTop: '10px',
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
+        paddingTop: 10,
     },
     aboutLayout: {
         backgroundColor: "#F4F4F4",
-        width: '325px',
-        height: '68px',
+        width: 325,
+        height: 68,
         paddingHorizontal: 20,
         marginVertical: 10,
         borderRadius: 20,
@@ -354,7 +354,7 @@ const styles = StyleSheet.create({
     },
     aboutLayout2: {
         backgroundColor: "#F4F4F4",
-        width: '325px',
+        width: 325,
         paddingVertical: 10,
         paddingHorizontal: 5,
         marginVertical: 10,
@@ -369,14 +369,14 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: "#5E5E5E",
         fontWeight: "500",
-        lineHeight: "24.3px",
+        lineHeight: 24.3,
         alignSelf: "center",
     },
     aboutSubheader: {
         fontSize: 12,
         color: "#B3B3B3",
         fontWeight: "500",
-        lineHeight: "14.58px",
+        lineHeight: 14.58,
         marginVertical: 5,
         alignSelf: "center",
     },
@@ -384,7 +384,7 @@ const styles = StyleSheet.create({
         fontSize: 12,
         color: "#5E5E5E",
         fontWeight: "500",
-        lineHeight: '14.58px',
+        lineHeight: 14.58,
     },
     dropDown: {
         width: 42,
@@ -392,9 +392,9 @@ const styles = StyleSheet.create({
 
     },
     menuContainer: {
-        marginTop: '20px',
-        width: "320px",
-        height: '60px',
+        marginTop: 20,
+        width: 320,
+        height: 60,
         justifyContent: "space-evenly",
     },
 

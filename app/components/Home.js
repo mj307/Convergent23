@@ -45,23 +45,23 @@ return (
           </View>
           <Image
             style={styles['female-profile']}
-            source={require("../assets/female-profile.png")}
+            source={require("../Assets/female-profile.png")}
           />
           <Image
             style={styles['male-user']}
-            source={require("../assets/male-user.png")}
+            source={require("../Assets/male-user.png")}
           />
           <Image
             style={styles.img}
-            source={require("../assets/female-profile.png")}
+            source={require("../Assets/female-profile.png")}
           />
           <Image
             style={styles['female-profile-2']}
-            source={require("../assets/female-profile.png")}
+            source={require("../Assets/female-profile.png")}
           />
           <Image
             style={styles['male-user-2']}
-            source={require("../assets/male-user.png")}
+            source={require("../Assets/male-user.png")}
           />
           <View style={styles.rectangle-2} />
         </View>

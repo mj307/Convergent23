@@ -89,7 +89,7 @@ const Contact = ({ navigation }) => {
                         <View>
                         <Image
                         style={styles.imgStyle}
-                            source={require("../assets/female-profile.png")}
+                            source={require("../Assets/female-profile.png")}
                         />
                             
                             <Text style={[styles.ClassmateSubheader]}> 
@@ -105,7 +105,7 @@ const Contact = ({ navigation }) => {
                         <View>
                         <Image
                         style={styles.imgStyle}
-                            source={require("../assets/female-profile.png")}
+                            source={require("../Assets/female-profile.png")}
                         />
                             <Text style={[styles.ClassmateSubheader]}> 
                             rohan patel{'\n'} 
@@ -120,7 +120,7 @@ const Contact = ({ navigation }) => {
                         <View>
                         <Image
                         style={styles.imgStyle}
-                            source={require("../assets/female-profile.png")}
+                            source={require("../Assets/female-profile.png")}
                         />
                             <Text style={[styles.ClassmateSubheader]}> 
                             rohan patel{'\n'} 
@@ -128,13 +128,15 @@ const Contact = ({ navigation }) => {
                             biology
                             </Text>
                         </View>
-                    </View>
+                    
+                </View>
+                </View>
+                     <View style={styles.menuContainer}>
+                    <Menu />
             </View>
             </View>
 
-                <View style={styles.menuContainer}>
-                    <Menu />
-                </View>
+               
             </View>
         </View>
     );
@@ -169,10 +171,10 @@ const styles = StyleSheet.create({
     },
     bigNum: {
         color: '#4e75eb',
-        fontSize: '100px',
+        fontSize: 100,
     },
     GroupRecs: {
-        marginTop: '10px',
+        marginTop: 10,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
@@ -193,14 +195,14 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: "#A3A3A3",
         fontWeight: "500",
-        lineHeight: "24.3px",
+        lineHeight: 24.3,
     },
 
     DarkerSectionHeader: {
         fontSize: 20,
         color: "#434343",
         fontWeight: "500",
-        lineHeight: "24.3px",
+        lineHeight: 24.3,
     },
 
     mainHeader: {
@@ -212,26 +214,27 @@ const styles = StyleSheet.create({
         alignContent: 'flex-end',
     },
     classContain: {
-        width: '390px',
+        width: 390,
+        height: 436,
         backgroundColor: 'white',
         alignItems: 'center',
-        borderRadius: '10px',
+        borderRadius: 10,
     },
     topContain: {
-        width: '332px',
+        width: 332,
         backgroundColor: 'white',
         alignItems: 'center',
-        borderRadius: '30px',
-        padding: '20px',
+        borderRadius: 30,
+        padding: 20,
     },
     ClassmateLayout: {
-        margin: '10px',
+        margin: 10,
         backgroundColor: "#F4F4F4",
         paddingHorizontal: 20,
         marginVertical: 20,
         borderRadius: 20,
-        width: '155px',
-        height: '132px',
+        width: 155,
+        height: 132,
         display: 'flex',
         alignItems: 'center', 
         position: 'relative',
@@ -239,13 +242,13 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     FriendLayout: {
-        margin: '10px',
+        margin: 10,
         backgroundColor: "#F4F4F4",
         paddingHorizontal: 20,
         marginVertical: 20,
         borderRadius: 20,
-        width: '100px',
-        height: '107px',
+        width: 100,
+        height: 107,
         display: 'flex',
         alignItems: 'center', 
         position: 'relative',
@@ -256,14 +259,14 @@ const styles = StyleSheet.create({
         fontSize: 40,
         color: "#4E75EB",
         fontWeight: "500",
-        lineHeight: "48.6px",
+        lineHeight: 48.6,
         alignSelf: "center",
     },
     ClassmateSubheader: {
         fontSize: 12,
         color: "#B3B3B3",
         fontWeight: "500",
-        lineHeight: "14.58px",
+        lineHeight: 14.58,
         marginVertical: 5,
         alignSelf: "center",
     },
@@ -271,7 +274,7 @@ const styles = StyleSheet.create({
         fontSize: 12,
         color: "#5E5E5E",
         fontWeight: "500",
-        lineHeight: '14.58px',
+        lineHeight: 14.58,
     },
     dropDown: {
         width: 42,
@@ -279,9 +282,9 @@ const styles = StyleSheet.create({
 
     },
     menuContainer: {
-        marginTop: '20px',
-        width: "320px",
-        height: '60px',
+        marginTop: 20,
+        width: 320,
+        height: 60,
         justifyContent: "space-evenly",
     },
 

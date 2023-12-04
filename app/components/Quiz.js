@@ -13,49 +13,49 @@ const Quiz = () => {
       <Image
         style={styles.undrawReadingTimeRePhf71Icon}
         contentFit="cover"
-        source={require("../assets/undraw-reading-time-re-phf7-1.png")}
+        source={require("../Assets/undraw-reading-time-re-phf7-1.png")}
       />
       <View style={styles.quizItem} />
       <Image
         style={styles.dallE20231101185212PIcon}
         contentFit="cover"
-        source={require("../assets/dall-e-20231101-185212--photo-logo-design-for--learnlink--with-a-modern-and-minimalist-aesthetic-13.png")}
+        source={require("../Assets/dall-e-20231101-185212--photo-logo-design-for--learnlink--with-a-modern-and-minimalist-aesthetic-13.png")}
       />
       <Image
         style={styles.quizInner}
         contentFit="cover"
-        source={require("../assets/ellipse-281.png")}
+        source={require("../Assets/ellipse-281.png")}
       />
       <Image
         style={[styles.homeIcon, styles.iconLayout1]}
         contentFit="cover"
-        source={require("../assets/home.png")}
+        source={require("../Assets/home.png")}
       />
       <Image
         style={[styles.settingsIcon, styles.iconLayout1]}
         contentFit="cover"
-        source={require("../assets/settings.png")}
+        source={require("../Assets/settings.png")}
       />
       <Image
         style={[styles.bookIcon, styles.iconLayout1]}
         contentFit="cover"
-        source={require("../assets/book.png")}
+        source={require("../Assets/book.png")}
       />
       <Image
         style={[styles.userIcon, styles.iconLayout1]}
         contentFit="cover"
-        source={require("../assets/user.png")}
+        source={require("../Assets/user.png")}
       />
       <Image
         style={[styles.notificationIcon, styles.iconLayout]}
         contentFit="cover"
-        source={require("../assets/notification1.png")}
+        source={require("../Assets/notification1.png")}
       />
       <Text style={[styles.question1, styles.howDoYouTypo]}>question 1</Text>
       <Image
         style={styles.plusMathIcon}
         contentFit="cover"
-        source={require("../assets/plus-math2.png")}
+        source={require("../Assets/plus-math2.png")}
       />
       <View style={[styles.rectangleParent, styles.groupChildLayout]}>
         <View style={[styles.groupChild, styles.groupChildLayout]} />
@@ -65,7 +65,7 @@ const Quiz = () => {
         <Image
           style={[styles.graduateIcon, styles.iconLayout]}
           contentFit="cover"
-          source={require("../assets/graduate.png")}
+          source={require("../Assets/graduate.png")}
         />
       </View>
       <View style={[styles.rectangleGroup, styles.rectanglePosition]}>
@@ -83,12 +83,12 @@ const Quiz = () => {
       <Image
         style={[styles.userGroupsIcon, styles.iconLayout]}
         contentFit="cover"
-        source={require("../assets/user-groups.png")}
+        source={require("../Assets/user-groups.png")}
       />
       <Image
         style={[styles.staffIcon, styles.iconLayout]}
         contentFit="cover"
-        source={require("../assets/staff.png")}
+        source={require("../Assets/staff.png")}
       />
     </View>
   );

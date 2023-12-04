@@ -20,17 +20,17 @@ const QuizQuestion4 = () => {
       <Image
         style={styles.dallE20231101185212PIcon}
         contentFit="cover"
-        source={require("../assets/dall-e-20231101-185212--photo-logo-design-for--learnlink--with-a-modern-and-minimalist-aesthetic-13.png")}
+        source={require("../Assets/dall-e-20231101-185212--photo-logo-design-for--learnlink--with-a-modern-and-minimalist-aesthetic-13.png")}
       />
       <Image
         style={styles.notificationIcon}
         contentFit="cover"
-        source={require("../assets/notification1.png")}
+        source={require("../Assets/notification1.png")}
       />
       <Image
         style={styles.component4Icon}
         contentFit="cover"
-        source={require("../assets/component-42.png")}
+        source={require("../Assets/component-42.png")}
       />
       <Pressable
         style={[styles.component3, styles.componentLayout]}
@@ -45,7 +45,7 @@ const QuizQuestion4 = () => {
         <Image
           style={[styles.userGroupsIcon, styles.iconLayout]}
           contentFit="cover"
-          source={require("../assets/user-groups.png")}
+          source={require("../Assets/user-groups.png")}
         />
       </Pressable>
       <TouchableHighlight
@@ -61,7 +61,7 @@ const QuizQuestion4 = () => {
           <ImageBackground
             style={[styles.staffIcon, styles.iconPosition]}
             resizeMode="cover"
-            source={require("../assets/staff.png")}
+            source={require("../Assets/staff.png")}
           />
         </View>
       </TouchableHighlight>
@@ -78,7 +78,7 @@ const QuizQuestion4 = () => {
           <Image
             style={[styles.graduateIcon, styles.iconLayout]}
             contentFit="cover"
-            source={require("../assets/graduate.png")}
+            source={require("../Assets/graduate.png")}
           />
         </>
       </TouchableHighlight>

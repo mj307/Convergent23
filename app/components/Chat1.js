@@ -12,7 +12,7 @@ const Chat1 = () => {
       <Image
         style={styles.notificationIcon}
         contentFit="cover"
-        source={require("../assets/notification.png")}
+        source={require("../Assets/notification.png")}
       />
       <Text style={[styles.rohanPatel, styles.rohanTypo]}>rohan patel</Text>
       <Text style={[styles.thisIsA, styles.thisTypo]}>
@@ -22,63 +22,63 @@ const Chat1 = () => {
       <Image
         style={styles.dallE20231101185212PIcon}
         contentFit="cover"
-        source={require("../assets/dall-e-20231101-185212--photo-logo-design-for--learnlink--with-a-modern-and-minimalist-aesthetic-11.png")}
+        source={require("../Assets/dall-e-20231101-185212--photo-logo-design-for--learnlink--with-a-modern-and-minimalist-aesthetic-11.png")}
       />
       <Image
         style={styles.nextPageIcon}
         contentFit="cover"
-        source={require("../assets/next-page1.png")}
+        source={require("../Assets/next-page1.png")}
       />
       <View style={styles.rectangleView} />
       <Image
         style={styles.ellipseIcon}
         contentFit="cover"
-        source={require("../assets/ellipse-28.png")}
+        source={require("../Assets/ellipse-28.png")}
       />
       <Image
         style={[styles.homeIcon, styles.iconLayout]}
         contentFit="cover"
-        source={require("../assets/home.png")}
+        source={require("../Assets/home.png")}
       />
       <Image
         style={[styles.settingsIcon, styles.iconLayout]}
         contentFit="cover"
-        source={require("../assets/settings.png")}
+        source={require("../Assets/settings.png")}
       />
       <Image
         style={[styles.bookIcon, styles.iconLayout]}
         contentFit="cover"
-        source={require("../assets/book.png")}
+        source={require("../Assets/book.png")}
       />
       <Image
         style={[styles.userIcon, styles.iconLayout]}
         contentFit="cover"
-        source={require("../assets/user.png")}
+        source={require("../Assets/user.png")}
       />
       <Image
         style={styles.plusMathIcon}
         contentFit="cover"
-        source={require("../assets/plus-math.png")}
+        source={require("../Assets/plus-math.png")}
       />
       <Image
         style={[styles.chatChild1, styles.chatChildLayout5]}
         contentFit="cover"
-        source={require("../assets/ellipse-341.png")}
+        source={require("../Assets/ellipse-341.png")}
       />
       <Image
         style={[styles.chatChild2, styles.chatChildLayout5]}
         contentFit="cover"
-        source={require("../assets/ellipse-35.png")}
+        source={require("../Assets/ellipse-35.png")}
       />
       <Image
         style={[styles.chatChild3, styles.chatChildLayout5]}
         contentFit="cover"
-        source={require("../assets/ellipse-35.png")}
+        source={require("../Assets/ellipse-35.png")}
       />
       <Image
         style={[styles.chatChild4, styles.chatChildLayout5]}
         contentFit="cover"
-        source={require("../assets/ellipse-35.png")}
+        source={require("../Assets/ellipse-35.png")}
       />
       <View style={[styles.chatChild5, styles.chatChildLayout4]} />
       <Text style={[styles.classes, styles.groupsTypo]}>classes</Text>
@@ -89,7 +89,7 @@ const Chat1 = () => {
       <Image
         style={[styles.maleUserIcon, styles.maleIconLayout]}
         contentFit="cover"
-        source={require("../assets/male-user1.png")}
+        source={require("../Assets/male-user1.png")}
       />
       <View style={[styles.chatChild8, styles.chatChildLayout6]} />
       <Text style={[styles.rohanPatel1, styles.rohanTypo]}>rohan patel</Text>
@@ -99,12 +99,12 @@ const Chat1 = () => {
       <Image
         style={[styles.nextPageIcon1, styles.nextIconPosition]}
         contentFit="cover"
-        source={require("../assets/next-page2.png")}
+        source={require("../Assets/next-page2.png")}
       />
       <Image
         style={[styles.maleUserIcon1, styles.maleIconLayout]}
         contentFit="cover"
-        source={require("../assets/male-user1.png")}
+        source={require("../Assets/male-user1.png")}
       />
       <View style={[styles.chatChild9, styles.chatChildLayout6]} />
       <Text style={[styles.rohanPatel2, styles.rohanTypo]}>rohan patel</Text>
@@ -114,12 +114,12 @@ const Chat1 = () => {
       <Image
         style={[styles.nextPageIcon2, styles.nextIconPosition]}
         contentFit="cover"
-        source={require("../assets/next-page2.png")}
+        source={require("../Assets/next-page2.png")}
       />
       <Image
         style={[styles.maleUserIcon2, styles.maleIconLayout]}
         contentFit="cover"
-        source={require("../assets/male-user1.png")}
+        source={require("../Assets/male-user1.png")}
       />
       <View style={[styles.chatChild10, styles.chatChildLayout6]} />
       <Text style={[styles.rohanPatel3, styles.rohanTypo]}>rohan patel</Text>
@@ -129,12 +129,12 @@ const Chat1 = () => {
       <Image
         style={[styles.nextPageIcon3, styles.nextIconPosition]}
         contentFit="cover"
-        source={require("../assets/next-page2.png")}
+        source={require("../Assets/next-page2.png")}
       />
       <Image
         style={[styles.maleUserIcon3, styles.maleIconLayout]}
         contentFit="cover"
-        source={require("../assets/male-user1.png")}
+        source={require("../Assets/male-user1.png")}
       />
       <View style={[styles.chatChild11, styles.chatChildLayout6]} />
       <Text style={[styles.rohanPatel4, styles.rohanTypo]}>rohan patel</Text>
@@ -144,27 +144,27 @@ const Chat1 = () => {
       <Image
         style={[styles.nextPageIcon4, styles.nextIconPosition]}
         contentFit="cover"
-        source={require("../assets/next-page2.png")}
+        source={require("../Assets/next-page2.png")}
       />
       <Image
         style={[styles.maleUserIcon4, styles.maleIconLayout]}
         contentFit="cover"
-        source={require("../assets/male-user1.png")}
+        source={require("../Assets/male-user1.png")}
       />
       <Image
         style={styles.maleUserIcon5}
         contentFit="cover"
-        source={require("../assets/male-user.png")}
+        source={require("../Assets/male-user.png")}
       />
       <Image
         style={[styles.femaleProfileIcon, styles.femaleIconPosition]}
         contentFit="cover"
-        source={require("../assets/female-profile.png")}
+        source={require("../Assets/female-profile.png")}
       />
       <Image
         style={[styles.femaleProfileIcon1, styles.femaleIconPosition]}
         contentFit="cover"
-        source={require("../assets/female-profile1.png")}
+        source={require("../Assets/female-profile1.png")}
       />
       <View style={styles.chatChild12} />
       <Text style={styles.viewDetails}>view details</Text>
@@ -182,19 +182,19 @@ learning style`}</Text>
       <Image
         style={[styles.chatChild14, styles.chatChildLayout1]}
         contentFit="cover"
-        source={require("../assets/ellipse-40.png")}
+        source={require("../Assets/ellipse-40.png")}
       />
       <Text style={[styles.text1, styles.textTypo]}>25</Text>
       <Image
         style={[styles.chatChild15, styles.chatChildLayout1]}
         contentFit="cover"
-        source={require("../assets/ellipse-40.png")}
+        source={require("../Assets/ellipse-40.png")}
       />
       <Text style={[styles.text2, styles.textTypo]}>6</Text>
       <Image
         style={[styles.chatChild16, styles.chatChildLayout1]}
         contentFit="cover"
-        source={require("../assets/ellipse-40.png")}
+        source={require("../Assets/ellipse-40.png")}
       />
       <Text style={[styles.text3, styles.textTypo]}>3</Text>
       <View style={[styles.chatChild17, styles.chatChildLayout]} />
@@ -202,14 +202,14 @@ learning style`}</Text>
       <Image
         style={[styles.dnaHelixIcon, styles.dnaIconLayout]}
         contentFit="cover"
-        source={require("../assets/dna-helix2.png")}
+        source={require("../Assets/dna-helix2.png")}
       />
       <View style={[styles.chatChild18, styles.chatChildLayout]} />
       <Text style={[styles.biology1, styles.biologyTypo]}>biology</Text>
       <Image
         style={[styles.dnaHelixIcon1, styles.dnaIconLayout]}
         contentFit="cover"
-        source={require("../assets/dna-helix2.png")}
+        source={require("../Assets/dna-helix2.png")}
       />
       <Text style={[styles.taughtByDr, styles.taughtTypo]}>
         taught by dr. x

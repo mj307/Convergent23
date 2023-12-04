@@ -83,6 +83,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     width: '100%',
+    height: '100%',
   },
   bigNum: {
     top: 15,
@@ -105,7 +106,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     lineHeight: 'normal',
     position: 'absolute',
-    top: 99,
+    top: 220,
   },
   'text-wrapper': {
     color: '#fbfdff',
@@ -116,13 +117,12 @@ const styles = StyleSheet.create({
   },
   'overlap-group': {
     backgroundColor: '#ffffff',
-    borderRadius: '30px 30px 0px 0px',
+    borderRadius: 30,
     height: 600,
-    left: 0,
+    width: 430,
+    marginLeft: -20,
     position: 'absolute',
-    top: 244,
-    width: 390,
-    borderRadius: 10,
+    top: 330,
   },
   'text-wrapper-2': {
     color: '#9b9b9b',
@@ -347,14 +347,14 @@ const styles = StyleSheet.create({
     height: 40,
     left: 322,
     position: 'absolute',
-    top: 24,
+    top: 50,
     width: 40,
   },
   logoTop: {
     height: 40,
     left: 10,
     position: 'absolute',
-    top: 24,
+    top: 50,
     width: 40,
   },
 });

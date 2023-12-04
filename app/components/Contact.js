@@ -80,7 +80,6 @@ const Contact = ({ navigation }) => {
                     </View>
             </View>
                     
-            <View style={styles.classContain}>
                 <Text style={[styles.SectionHeader]}> suggested friends </Text>
                 
                 
@@ -131,14 +130,13 @@ const Contact = ({ navigation }) => {
                     
                 </View>
                 </View>
-                     <View style={styles.menuContainer}>
+                    <View style={styles.menuContainer}>
                     <Menu />
-            </View>
+                    </View>
             </View>
 
                
             </View>
-        </View>
     );
                     }
 
@@ -148,7 +146,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between', // Aligns items at each end of the container
         alignItems: 'center',
-        paddingHorizontal: 16, // Optional: Add horizontal padding for spacing from the edges
+        paddingHorizontal: 16,
+        marginBottom: 20, // Optional: Add horizontal padding for spacing from the edges
     },
     imgStyle: {
         width: 42,
@@ -193,6 +192,7 @@ const styles = StyleSheet.create({
 
     SectionHeader: {
         fontSize: 20,
+        marginTop: 10,
         color: "#A3A3A3",
         fontWeight: "500",
         lineHeight: 24.3,
@@ -209,16 +209,20 @@ const styles = StyleSheet.create({
         fontSize: 30,
         color: "#ffffff",
         fontWeight: "550",
-        marginTop: 50,
+        marginTop: 30,
         marginBottom: 10,
         alignContent: 'flex-end',
+        textAlign: 'left',
     },
     classContain: {
-        width: 390,
-        height: 436,
+        width: 425,
+        height: 510,
         backgroundColor: 'white',
         alignItems: 'center',
         borderRadius: 10,
+        borderBottomLeftRadius: 0,
+        borderBottomRightRadius: 0,
+        marginBottom: -40,
     },
     topContain: {
         width: 332,
@@ -231,9 +235,9 @@ const styles = StyleSheet.create({
         margin: 10,
         backgroundColor: "#F4F4F4",
         paddingHorizontal: 20,
-        marginVertical: 20,
+        marginVertical: 0,
         borderRadius: 20,
-        width: 155,
+        width: 175,
         height: 132,
         display: 'flex',
         alignItems: 'center', 
@@ -247,8 +251,8 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         marginVertical: 20,
         borderRadius: 20,
-        width: 100,
-        height: 107,
+        width: 110,
+        height: 137,
         display: 'flex',
         alignItems: 'center', 
         position: 'relative',

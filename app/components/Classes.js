@@ -223,7 +223,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between', // Aligns items at each end of the container
         alignItems: 'center',
-        paddingHorizontal: 16, // Optional: Add horizontal padding for spacing from the edges
+        paddingHorizontal: 16,
+        marginBottom: 50, // Optional: Add horizontal padding for spacing from the edges
       },
       icon: {
         width: 30, // Adjust the width as needed
@@ -332,12 +333,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
       },
     classContain: {
-        width: 390,
+        width: 425,
         backgroundColor: 'white',
         alignItems: 'center',
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
         paddingTop: 10,
+        marginBottom: -55,
     },
     aboutLayout: {
         backgroundColor: "#F4F4F4",

@@ -99,7 +99,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
-    width: 315,
+    width: '100%',
+    marginBottom: -400,
+    height: '70%',
     padding: 20,
   },
   title: {
@@ -145,7 +147,7 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 0,
     borderBottomLeftRadius: 0,
     backgroundColor: '#F4F4F4',
-    width: 264,
+    width: 300,
   },
   SigninButton: {
     backgroundColor: '#4E75EB',

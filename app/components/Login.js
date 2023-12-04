@@ -49,9 +49,10 @@ const Login = () => {
         />
       </View>
 
-      <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
+      <TouchableOpacity style={styles.loginButton} onPress={navigation.navigate(QuizQuestion1)}>
         <Text style={styles.loginButtonText}>Sign Up</Text>
       </TouchableOpacity>
+      
     </View>
   );
 };

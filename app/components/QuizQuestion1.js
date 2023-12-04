@@ -11,6 +11,7 @@ import { Image } from "expo-image";
 import { useNavigation } from "@react-navigation/native";
 import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
 import QuizQuestion2 from "./QuizQuestion2";
+import Results from "./Contact";
 
 const QuizQuestion1 = () => {
   const navigation = useNavigation();
@@ -35,7 +36,7 @@ const QuizQuestion1 = () => {
       />
       <Pressable
         style={[styles.component3, styles.componentLayout]}
-        onPress={() => navigation.navigate(QuizQuestion2)}
+        onPress={() => navigation.navigate(Results)}
       >
         <Pressable style={styles.groupChildPosition}>
           <View style={[styles.groupChild, styles.groupChildPosition]} />
@@ -52,7 +53,7 @@ const QuizQuestion1 = () => {
       <TouchableHighlight
         style={[styles.component2, styles.componentLayout]}
         underlayColor="#fff"
-        onPress={() => navigation.navigate(QuizQuestion2)}
+        onPress={() => navigation.navigate(Results)}
       >
         <View style={styles.groupChildPosition}>
           <View style={[styles.groupChild, styles.groupChildPosition]} />
@@ -69,7 +70,7 @@ const QuizQuestion1 = () => {
       <TouchableHighlight
         style={styles.wrapper}
         underlayColor="#fff"
-        onPress={() => navigation.navigate(QuizQuestion2)}
+        onPress={() => navigation.navigate(Results)}
       >
         <>
           <View style={[styles.groupChild, styles.groupChildPosition]} />
@@ -129,8 +130,8 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: Border.br_11xl,
     borderTopRightRadius: Border.br_11xl,
     backgroundColor: Color.colorRoyalblue,
-    width: 390,
-    height: 394,
+    width: 430,
+    height: 490,
     position: "absolute",
   },
   dallE20231101185212PIcon: {
@@ -159,7 +160,7 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorWhite,
     bottom: "0%",
     right: "0%",
-    top: "0%",
+    top: 500,
     height: "100%",
   },
   largeGroups: {
@@ -174,7 +175,7 @@ const styles = StyleSheet.create({
     top: "30.86%",
   },
   component3: {
-    top: 668,
+    top: 700,
   },
   smallGroups: {
     width: "35.38%",
@@ -190,7 +191,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   component2: {
-    top: 573,
+    top: 600,
   },
   independently: {
     width: "41.85%",

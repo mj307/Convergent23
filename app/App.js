@@ -21,6 +21,7 @@ import Signin from "./components/Signin";
 import User from "./components/User";
 import Classmate from "./components/ClassCode";
 import Messages from "./components/Messages";
+import QuizQuestion1 from "./components/QuizQuestion1";
 export default function App() {
     const Stack = createNativeStackNavigator();
 
@@ -37,7 +38,7 @@ export default function App() {
 
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home">
+            <Stack.Navigator initialRouteName="Signin">
                 {/* home screen  */}
                 <Stack.Screen
                     name="Home"
@@ -118,6 +119,14 @@ export default function App() {
                 <Stack.Screen
                     name="Message"
                     component={Messages}
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+
+                <Stack.Screen
+                    name="QuizQuestion1"
+                    component={QuizQuestion1}
                     options={{
                         headerShown: false,
                     }}

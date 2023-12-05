@@ -480,8 +480,8 @@ const styles = StyleSheet.create({
   },
   chatInner: {
     top: 248,
-    height: 340,
-    width: 340,
+    height: 202,
+    width: 325,
     left: 33,
     backgroundColor: Color.colorWhitesmoke,
     borderRadius: Border.br_3xs,
@@ -721,12 +721,9 @@ const styles = StyleSheet.create({
   },
   chat: {
     flex: 1,
-    height: 844,
-    overflow: "hidden",
+    height: 800,
     backgroundColor: Color.colorRoyalblue,
     width: "100%",
-    justifyContent: 'center', // Center children vertically
-    alignItems: 'center',     // Center children horizontally
   },
 });
 

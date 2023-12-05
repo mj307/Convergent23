@@ -28,11 +28,14 @@ return (
             </Text>
           </View>
           <View style={styles['overlap-2']}>
-            <Text style={styles['text-wrapper-5']}>Group 1</Text>
-            <View style={styles.rectangle} />
-            <Text style={styles['text-wrapper-6']}>Group 2</Text>
-          </View>
-          <View style={styles['overlap-3']}>
+          <Text style={styles['bigNum']}>2</Text>
+            <Text style={styles['group-members']}>
+              {'\n'}
+              calculus{'\n'}
+              auditory{'\n'}
+              next meeting
+            </Text></View>
+            <View style={[styles['overlap-3'], { top: 259  + 10 /* Adjust position as needed */ }]}>
             <Text style={styles['text-wrapper-7']}>Biology</Text>
             <Text style={styles['text-wrapper-8']}>taught by Dr. A</Text>
             <View style={styles['overlap-4']}>
@@ -40,6 +43,17 @@ return (
               <Text style={styles['study-groups']}>
                 Study{'\n'}
                 Groups
+              </Text>
+            </View>
+          </View>
+          <View style={[styles['overlap-3'], { top: 259 + 24 * 2 + 20 /* Adjust position as needed */ }]}>
+            <Text style={styles['text-wrapper-7']}>calculus</Text>
+            <Text style={styles['text-wrapper-8']}>taught by Dr. C</Text>
+            <View style={styles['overlap-4']}>
+              <Text style={styles['text-wrapper-9']}>1</Text>
+              <Text style={styles['study-groups']}>
+                Study{'\n'}
+                Group
               </Text>
             </View>
           </View>
@@ -99,7 +113,7 @@ const styles = StyleSheet.create({
   },
   'welcome-back': {
     color: 'transparent',
-    fontFamily: 'Cabin, Helvetica',
+    fontFamily: 'Helvetica',
     fontSize: 30,
     fontWeight: '500',
     left: 37,
@@ -126,7 +140,7 @@ const styles = StyleSheet.create({
   },
   'text-wrapper-2': {
     color: '#9b9b9b',
-    fontFamily: 'Cabin, Helvetica',
+    fontFamily: 'Helvetica',
     fontSize: 20,
     fontWeight: '500',
     left: 32,
@@ -138,7 +152,7 @@ const styles = StyleSheet.create({
   },
   'text-wrapper-3': {
     color: '#9b9b9b',
-    fontFamily: 'Cabin, Helvetica',
+    fontFamily: 'Helvetica',
     fontSize: 20,
     fontWeight: '500',
     left: 32,
@@ -150,7 +164,7 @@ const styles = StyleSheet.create({
   },
   'text-wrapper-4': {
     color: '#9b9b9b',
-    fontFamily: 'Cabin, Helvetica',
+    fontFamily: 'Helvetica',
     fontSize: 20,
     fontWeight: '500',
     left: 32,
@@ -162,7 +176,7 @@ const styles = StyleSheet.create({
   },
   'menu-bar': {
     color: '#9b9b9b',
-    fontFamily: 'Cabin, Helvetica',
+    fontFamily: 'Helvetica',
     fontSize: 20,
     fontWeight: '500',
     letterSpacing: 0,
@@ -182,7 +196,7 @@ const styles = StyleSheet.create({
   },
   'group-members': {
     color: '#5d5d5d',
-    fontFamily: 'Cabin, Helvetica',
+    fontFamily: 'Helvetica',
     fontSize: 15,
     fontWeight: '500',
     left: 25,
@@ -199,10 +213,12 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 58,
     width: 155,
+    backgroundColor: '#f4f4f4',
+
   },
   'text-wrapper-5': {
     color: '#5d5d5d',
-    fontFamily: 'Cabin, Helvetica',
+    fontFamily: 'Helvetica',
     fontSize: 15,
     fontWeight: '500',
     left: 36,
@@ -224,7 +240,7 @@ const styles = StyleSheet.create({
   },
   'text-wrapper-6': {
     color: '#5d5d5d',
-    fontFamily: 'Cabin, Helvetica',
+    fontFamily: ' Helvetica',
     fontSize: 15,
     fontWeight: '500',
     left: 53,
@@ -244,9 +260,10 @@ const styles = StyleSheet.create({
     top: 259,
     width: 325,
   },
+  
   'text-wrapper-7': {
     color: '#5d5d5d',
-    fontFamily: 'Cabin, Helvetica',
+    fontFamily: 'Helvetica',
     fontSize: 12,
     fontWeight: '500',
     left: 55,
@@ -258,7 +275,7 @@ const styles = StyleSheet.create({
   },
   'text-wrapper-8': {
     color: '#b3b3b3',
-    fontFamily: 'Cabin, Helvetica',
+    fontFamily: 'Helvetica',
     fontSize: 8,
     fontWeight: '500',
     left: 55,
@@ -277,7 +294,7 @@ const styles = StyleSheet.create({
   },
   'text-wrapper-9': {
     color: '#4E75EB',
-    fontFamily: 'Cabin, Helvetica',
+    fontFamily: 'Helvetica',
     fontSize: 20,
     fontWeight: '500',
     left: 0,
@@ -290,7 +307,7 @@ const styles = StyleSheet.create({
   },
   'study-groups': {
     color: '#b3b3b3',
-    fontFamily: 'Cabin, Helvetica',
+    fontFamily: 'Helvetica',
     fontSize: 8,
     fontWeight: '500',
     left: 31,

@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
   iconLayout: {
     height: 25,
     width: 25,
-    top: 806,
+    bottom: 20, // Set this value to position the icons from the bottom
     position: "absolute",
   },
   chatChildLayout5: {
@@ -489,15 +489,19 @@ const styles = StyleSheet.create({
   },
   homeIcon: {
     left: 63,
+    bottom: 20, // Bottom position
   },
   settingsIcon: {
     left: 302,
+    bottom: 20, // Bottom position
   },
   bookIcon: {
     left: 117,
+    bottom: 20, // Bottom position
   },
   userIcon: {
     left: 247,
+    bottom: 20, // Bottom position
   },
   plusMathIcon: {
     top: 777,

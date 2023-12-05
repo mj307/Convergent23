@@ -24,9 +24,9 @@ const Chat = () => {
         contentFit="cover"
         source={require("../Assets/notification.png")}
       />
-      <Text style={[styles.rohanPatel, styles.rohanTypo]}>rohan patel</Text>
+      <Text style={[styles.rohanPatel, styles.rohanTypo]}>Rohan Patel</Text>
       <Text style={[styles.thisIsA, styles.thisTypo]}>
-        this is a snippet of the last message ...
+        Yay!
       </Text>
       <Image
         style={styles.dallE20231101185212PIcon}
@@ -71,9 +71,9 @@ const Chat = () => {
         source={require("../Assets/male-user1.png")}
       />
       <View style={[styles.chatChild6, styles.chatChildLayout5]} />
-      <Text style={[styles.rohanPatel1, styles.rohanTypo]}>rohan patel</Text>
+      <Text style={[styles.rohanPatel1, styles.rohanTypo]}>Anchit N</Text>
       <Text style={[styles.thisIsA1, styles.thisTypo]}>
-        this is a snippet of the last message ...
+        Good luck on the test!
       </Text>
       <Image
         style={[styles.nextPageIcon1, styles.nextIconPosition]}
@@ -86,9 +86,9 @@ const Chat = () => {
         source={require("../Assets/male-user1.png")}
       />
       <View style={[styles.chatChild7, styles.chatChildLayout5]} />
-      <Text style={[styles.rohanPatel2, styles.rohanTypo]}>rohan patel</Text>
+      <Text style={[styles.rohanPatel2, styles.rohanTypo]}>Anya R</Text>
       <Text style={[styles.thisIsA2, styles.thisTypo]}>
-        this is a snippet of the last message ...
+        See you then!
       </Text>
       <Image
         style={[styles.nextPageIcon2, styles.nextIconPosition]}
@@ -101,9 +101,9 @@ const Chat = () => {
         source={require("../Assets/male-user1.png")}
       />
       <View style={[styles.chatChild8, styles.chatChildLayout5]} />
-      <Text style={[styles.rohanPatel3, styles.rohanTypo]}>rohan patel</Text>
+      <Text style={[styles.rohanPatel3, styles.rohanTypo]}>Asmita K</Text>
       <Text style={[styles.thisIsA3, styles.thisTypo]}>
-        this is a snippet of the last message ...
+        Sounds good!
       </Text>
       <Image
         style={[styles.nextPageIcon3, styles.nextIconPosition]}
@@ -116,9 +116,9 @@ const Chat = () => {
         source={require("../Assets/male-user1.png")}
       />
       <View style={[styles.chatChild9, styles.chatChildLayout5]} />
-      <Text style={[styles.rohanPatel4, styles.rohanTypo]}>rohan patel</Text>
+      <Text style={[styles.rohanPatel4, styles.rohanTypo]}>Mehar P</Text>
       <Text style={[styles.thisIsA4, styles.thisTypo]}>
-        this is a snippet of the last message ...
+        Thanks!
       </Text>
       <Image
         style={[styles.nextPageIcon4, styles.nextIconPosition]}
@@ -255,7 +255,6 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_xl,
     left: 100,
     textAlign: "left",
-    fontFamily: FontFamily.cabinMedium,
     fontWeight: "500",
     position: "absolute",
   },
@@ -266,7 +265,6 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_3xs,
     left: 100,
     textAlign: "left",
-    fontFamily: FontFamily.cabinMedium,
     fontWeight: "500",
     position: "absolute",
   },
@@ -289,7 +287,6 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_5xs,
     top: 369,
     textAlign: "center",
-    fontFamily: FontFamily.cabinMedium,
     fontWeight: "500",
     position: "absolute",
   },
@@ -319,7 +316,6 @@ const styles = StyleSheet.create({
   },
   seniorAtUtTypo: {
     color: Color.colorDimgray_100,
-    fontFamily: FontFamily.cabinMediumItalic,
     fontStyle: "italic",
     fontSize: FontSize.size_3xs,
     fontWeight: "500",
@@ -330,7 +326,6 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_sm,
     color: Color.colorDimgray_100,
     textAlign: "center",
-    fontFamily: FontFamily.cabinMedium,
     fontWeight: "500",
     position: "absolute",
   },
@@ -346,7 +341,6 @@ const styles = StyleSheet.create({
     color: Color.colorRoyalblue,
     textAlign: "center",
     fontSize: FontSize.size_xl,
-    fontFamily: FontFamily.cabinMedium,
     fontWeight: "500",
     position: "absolute",
   },
@@ -364,7 +358,6 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_5xs,
     color: Color.colorDimgray_200,
     textAlign: "left",
-    fontFamily: FontFamily.cabinMedium,
     fontWeight: "500",
     position: "absolute",
   },
@@ -380,14 +373,14 @@ const styles = StyleSheet.create({
     left: 136,
     color: Color.colorDarkgray_100,
     width: 40,
-    fontFamily: FontFamily.cabinMedium,
     fontWeight: "500",
     position: "absolute",
   },
   iconLayout: {
-    maxHeight: "100%",
-    maxWidth: "100%",
-    overflow: "hidden",
+    height: 25,
+    width: 25,
+    bottom: 20, // Set this value to position the icons from the bottom
+    position: "absolute",
   },
   homePosition: {
     height: "37.88%",
@@ -401,14 +394,21 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   chatChild: {
+    // Example adjustment: make sure the width is sufficient and centered 
     top: 152,
     borderTopLeftRadius: Border.br_11xl,
     borderTopRightRadius: Border.br_11xl,
     height: 693,
     width: 390,
+    alignSelf: 'center', // Center the box itself
+    alignItems: 'center', // Center its children horizontally
+    justifyContent: 'center',
     backgroundColor: Color.colorWhite,
     left: 0,
     position: "absolute",
+    paddingLeft: 0,
+    marginLeft: 0,
+    width: '100%', 
   },
   screenshot20231111At1221: {
     left: -430,
@@ -445,7 +445,6 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_11xl,
     color: Color.colorGray,
     textAlign: "left",
-    fontFamily: FontFamily.cabinMedium,
     fontWeight: "500",
     position: "absolute",
   },
@@ -620,7 +619,6 @@ const styles = StyleSheet.create({
     top: 395,
     textAlign: "center",
     fontSize: FontSize.size_3xs,
-    fontFamily: FontFamily.cabinMedium,
     fontWeight: "500",
     position: "absolute",
   },
@@ -655,7 +653,6 @@ const styles = StyleSheet.create({
     color: Color.colorRoyalblue,
     textAlign: "center",
     top: 291,
-    fontFamily: FontFamily.cabinMedium,
     fontWeight: "500",
     position: "absolute",
   },
@@ -710,18 +707,31 @@ const styles = StyleSheet.create({
   taughtByDr1: {
     top: 417,
   },
-    menuContainer: {
-        marginTop: '800px',
-        width: "390px",
-        height: '60px',
-        justifyContent: "space-evenly",
-    },
+  menuContainer: {
+    position: 'absolute',
+    bottom: 0,
+    width: "100%", // Full width of the screen
+    height: 60, // Height of the menu bar
+    flexDirection: 'row',
+    justifyContent: 'space-around', // This already spaces items evenly. 
+    // For more space between items, you might want to switch to 'space-between' 
+    // or manually adjust the positioning of each item if they are absolutely positioned.
+    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
+  menuItemStyle: {
+    // Example style for individual menu items
+    // Adjust padding or margin to increase space between items
+    marginHorizontal: 10, // Adjust as needed
+  },
   chat: {
     flex: 1,
     height: 844,
     overflow: "hidden",
     backgroundColor: Color.colorRoyalblue,
     width: "100%",
+    justifyContent: 'center', // Center children vertically
+    alignItems: 'center',     // Center children horizontally
   },
 });
 

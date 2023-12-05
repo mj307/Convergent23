@@ -10,7 +10,7 @@ import {
 import { Image } from "expo-image";
 import { useNavigation } from "@react-navigation/native";
 import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
-import Results from "./QuizQuestion3";
+import Results from "./Contact";
 
 const QuizQuestion3 = () => {
   const navigation = useNavigation();

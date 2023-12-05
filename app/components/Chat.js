@@ -71,7 +71,7 @@ const Chat = () => {
         source={require("../Assets/male-user1.png")}
       />
       <View style={[styles.chatChild6, styles.chatChildLayout5]} />
-      <Text style={[styles.rohanPatel1, styles.rohanTypo]}>Anchit N</Text>
+      <Text style={[styles.rohanPatel1, styles.rohanTypo]}>Anchit N.</Text>
       <Text style={[styles.thisIsA1, styles.thisTypo]}>
         Good luck on the test!
       </Text>
@@ -86,7 +86,7 @@ const Chat = () => {
         source={require("../Assets/male-user1.png")}
       />
       <View style={[styles.chatChild7, styles.chatChildLayout5]} />
-      <Text style={[styles.rohanPatel2, styles.rohanTypo]}>Anya R</Text>
+      <Text style={[styles.rohanPatel2, styles.rohanTypo]}>Anya R.</Text>
       <Text style={[styles.thisIsA2, styles.thisTypo]}>
         See you then!
       </Text>
@@ -101,7 +101,7 @@ const Chat = () => {
         source={require("../Assets/male-user1.png")}
       />
       <View style={[styles.chatChild8, styles.chatChildLayout5]} />
-      <Text style={[styles.rohanPatel3, styles.rohanTypo]}>Asmita K</Text>
+      <Text style={[styles.rohanPatel3, styles.rohanTypo]}>Asmita K.</Text>
       <Text style={[styles.thisIsA3, styles.thisTypo]}>
         Sounds good!
       </Text>
@@ -116,7 +116,7 @@ const Chat = () => {
         source={require("../Assets/male-user1.png")}
       />
       <View style={[styles.chatChild9, styles.chatChildLayout5]} />
-      <Text style={[styles.rohanPatel4, styles.rohanTypo]}>Mehar P</Text>
+      <Text style={[styles.rohanPatel4, styles.rohanTypo]}>Mehar P.</Text>
       <Text style={[styles.thisIsA4, styles.thisTypo]}>
         Thanks!
       </Text>
@@ -480,8 +480,8 @@ const styles = StyleSheet.create({
   },
   chatInner: {
     top: 248,
-    height: 202,
-    width: 325,
+    height: 340,
+    width: 340,
     left: 33,
     backgroundColor: Color.colorWhitesmoke,
     borderRadius: Border.br_3xs,
@@ -710,12 +710,7 @@ const styles = StyleSheet.create({
   menuContainer: {
     position: 'absolute',
     bottom: 0,
-    width: "100%", // Full width of the screen
-    height: 60, // Height of the menu bar
-    flexDirection: 'row',
-    justifyContent: 'space-around', // This already spaces items evenly. 
-    // For more space between items, you might want to switch to 'space-between' 
-    // or manually adjust the positioning of each item if they are absolutely positioned.
+    width: '100%', // Full width of the screen
     alignItems: 'center',
     backgroundColor: '#fff',
   },

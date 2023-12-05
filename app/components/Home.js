@@ -312,7 +312,6 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     left: 31,
     letterSpacing: 0,
-    lineHeight: 'normal',
     position: 'absolute',
     top: 2,
     width: 31,

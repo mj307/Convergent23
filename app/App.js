@@ -22,6 +22,9 @@ import User from "./components/User";
 import Classmate from "./components/ClassCode";
 import Messages from "./components/Messages";
 import QuizQuestion1 from "./components/QuizQuestion1";
+import QuizQuestion2 from "./components/QuizQuestion2";
+import QuizQuestion3 from "./components/QuizQuestion3";
+
 export default function App() {
     const Stack = createNativeStackNavigator();
 
@@ -127,6 +130,20 @@ export default function App() {
                 <Stack.Screen
                     name="QuizQuestion1"
                     component={QuizQuestion1}
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+                <Stack.Screen
+                    name="QuizQuestion2"
+                    component={QuizQuestion2}
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+                <Stack.Screen
+                    name="QuizQuestion3"
+                    component={QuizQuestion3}
                     options={{
                         headerShown: false,
                     }}
